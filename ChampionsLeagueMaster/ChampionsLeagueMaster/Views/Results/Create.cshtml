@@ -1,0 +1,59 @@
+﻿@model ChampionsLeagueMaster.Models.Result
+
+@{
+    ViewData["Title"] = "Dodaj wynik";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Dodaj nowy wynik</h2>
+    <div class="card shadow-sm mt-3">
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Sezon</label>
+                    <input type="text" asp-for="Season" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Kolejka</label>
+                    <input type="text" asp-for="Round" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Gospodarz</label>
+                    <select asp-for="HomeTeamId" asp-items="@(new SelectList(ViewBag.Teams, "Id", "Name"))" class="form-select" required>
+                        <option value="">Wybierz drużynę</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Goście</label>
+                    <select asp-for="AwayTeamId" asp-items="@(new SelectList(ViewBag.Teams, "Id", "Name"))" class="form-select" required>
+                        <option value="">Wybierz drużynę</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Wynik Gospodarzy</label>
+                    <input type="number" asp-for="HomeTeamGoals" class="form-control" min="0" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Wynik Gości</label>
+                    <input type="number" asp-for="AwayTeamGoals" class="form-control" min="0" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Data meczu</label>
+                    <input type="date" asp-for="MatchDay" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Godzina meczu</label>
+                    <input type="time" asp-for="MatchTime" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Status</label>
+                    <input type="text" asp-for="Status" class="form-control" />
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Zapisz</button>
+                    <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

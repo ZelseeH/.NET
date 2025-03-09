@@ -1,0 +1,41 @@
+﻿@model ChampionsLeagueMaster.Models.Result
+
+@{
+    ViewData["Title"] = "Szczegóły wyniku";
+}
+
+<div class="container py-4">
+    <h1 class="text-center mb-4 display-5 fw-bold text-primary">Szczegóły Wyniku</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4 fw-bold">Sezon:</dt>
+                <dd class="col-sm-8">@Model.Season</dd>
+
+                <dt class="col-sm-4 fw-bold">Kolejka:</dt>
+                <dd class="col-sm-8">@Model.Round</dd>
+
+                <dt class="col-sm-4 fw-bold">Gospodarze:</dt>
+                <dd class="col-sm-8">@Model.HomeTeam.Name</dd>
+
+                <dt class="col-sm-4 fw-bold">Goście:</dt>
+                <dd class="col-sm-8">@Model.AwayTeam.Name</dd>
+
+                <dt class="col-sm-4 fw-bold">Wynik:</dt>
+                <dd class="col-sm-8">@Model.HomeTeamGoals : @Model.AwayTeamGoals</dd>
+
+                <dt class="col-sm-4 fw-bold">Data meczu:</dt>
+              <dd class="col-sm-8">@Model.MatchDay?.ToString("yyyy-MM-dd")</dd>
+
+                <dt class="col-sm-4 fw-bold">Godzina meczu:</dt>
+                <dd class="col-sm-8">@Model.MatchTime</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edytuj</a>
+        <a asp-action="Index" class="btn btn-secondary">Wróć</a>
+    </div>
+</div>

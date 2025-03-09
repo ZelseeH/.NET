@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ChampionsLeagueMaster.Models.Team>
+
+@{
+    ViewData["Title"] = "Teams";
+}
+
+<div class="container-fluid py-4 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-4 display-5 fw-bold text-primary">Zespoły</h1>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="mb-3">
+                    <a asp-action="Create" class="btn btn-success">Stwórz Zespół</a>
+                </div>
+                <table class="table table-sm table-bordered table-hover text-center align-middle mt-3">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 40%">Nazwa Zespołu</th>
+                            <th style="width: 25%">Kraj Pochodzenia</th>
+                            <th style="width: 15%">Założony</th>
+                            <th style="width: 20%">Akcje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                                <tr>
+                                    <td class="fw-bold text-start">
+                                        <a asp-controller="Players" 
+                                           asp-action="Index" 
+                                           asp-route-teamName="@item.Name" 
+                                           class="text-decoration-none">
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                        </a>
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.Country)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.FoundedAt)</td>
+                                    <td>
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Szczegóły</a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
+                                    </td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

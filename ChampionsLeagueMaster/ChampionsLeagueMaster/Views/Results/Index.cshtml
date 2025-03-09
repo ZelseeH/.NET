@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ChampionsLeagueMaster.Models.Result>
+
+@{
+    ViewData["Title"] = "Results";
+    var seasons = ViewBag.Seasons as List<string> ?? new List<string>();
+    var rounds = ViewBag.Rounds as List<string> ?? new List<string>();
+    var selectedSeason = ViewBag.SelectedSeason as string ?? seasons.FirstOrDefault();
+    var selectedRound = ViewBag.SelectedRound as string ?? rounds.FirstOrDefault();
+}
+
+<div class="container-fluid py-4 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-4 display-5 fw-bold text-primary">Wyniki Meczów</h1>
+
+        <!-- Przeniesiony przycisk "Dodaj mecz" -->
+        <div class="text-center mb-4">
+            <a asp-action="Create" class="btn btn-success">Dodaj mecz</a>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="Index" method="get" class="row mb-3 justify-content-center align-items-end g-2">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <label for="season" class="form-label fw-bold text-muted mb-1">Wybierz sezon:</label>
+                            <select name="season" id="season" class="form-select form-select-sm">
+                                @foreach (var season in seasons)
+                                {
+                                        <option value="@season" selected="@(season == selectedSeason)">@season</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <label for="round" class="form-label fw-bold text-muted mb-1">Wybierz kolejkę:</label>
+                            <select name="round" id="round" class="form-select form-select-sm">
+                                @foreach (var round in rounds)
+                                {
+                                        <option value="@round" selected="@(round == selectedRound)">@round</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary btn-sm">Szukaj</button>
+                    </div>
+                </form>
+
+                <table class="table table-sm table-bordered table-hover text-center align-middle mt-3">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 25%">Gospodarze</th>
+                            <th style="width: 10%">Wynik</th>
+                            <th style="width: 25%">Goście</th>
+                            <th style="width: 10%">Data meczu</th>
+                            <th style="width: 10%">Godzina meczu</th>
+                            <th style="width: 20%">Akcje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                                <tr>
+                                    <td class="fw-bold text-end">@Html.DisplayFor(modelItem => item.HomeTeam.Name)</td>
+                                    <td class="fw-bold bg-light">@Html.DisplayFor(modelItem => item.HomeTeamGoals) : @Html.DisplayFor(modelItem => item.AwayTeamGoals)</td>
+                                    <td class="fw-bold text-start">@Html.DisplayFor(modelItem => item.AwayTeam.Name)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.MatchDay)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.MatchTime)</td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Szczegóły</a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Usuń</a>
+                                    </td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

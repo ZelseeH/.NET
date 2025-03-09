@@ -1,0 +1,62 @@
+﻿@model ChampionsLeagueMaster.Models.Player
+
+@{
+    ViewData["Title"] = "Edytuj zawodnika";
+}
+
+<div class="container py-4">
+    <h1 class="text-center mb-4 display-5 fw-bold text-primary">Edytuj Zawodnika</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="FirstName" class="form-label fw-bold">Imię</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LastName" class="form-label fw-bold">Nazwisko</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="TeamId" class="form-label fw-bold">Zespół</label>
+                        <select asp-for="TeamId" class="form-control" asp-items="ViewBag.Teams"></select>
+                        <span asp-validation-for="TeamId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Position" class="form-label fw-bold">Pozycja</label>
+                        <input asp-for="Position" class="form-control" />
+                        <span asp-validation-for="Position" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="JerseyNumber" class="form-label fw-bold">Numer na koszulce</label>
+                        <input asp-for="JerseyNumber" class="form-control" />
+                        <span asp-validation-for="JerseyNumber" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="BirthDate" class="form-label fw-bold">Data urodzenia</label>
+                        <input asp-for="BirthDate" class="form-control" type="date" />
+                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Zapisz</button>
+                    <a asp-action="Index" class="btn btn-secondary">Wróć</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

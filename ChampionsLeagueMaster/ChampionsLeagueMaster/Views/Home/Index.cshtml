@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Witaj w Lidze Mistrzów";
+}
+
+<div class="hero-section" style="background-image: url('/Img/uefa champions league.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+
+<div class="container mt-4 text-center">
+    <h1 class="display-4">Witaj w Lidze Mistrzów!</h1>
+    <p class="lead">Śledź wyniki, statystyki i zespoły najlepszych rozgrywek klubowych na świecie.</p>
+    <a class="btn btn-primary btn-lg mb-4" asp-controller="SeasonStats" asp-action="Index">Sprawdź tabelę</a>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Wyniki</h3>
+            <p>Sprawdź najnowsze wyniki meczów Ligi Mistrzów.</p>
+            <a class="btn btn-outline-primary" asp-controller="Results" asp-action="Index">Przejdź</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Zespoły</h3>
+            <p>Poznaj kluby rywalizujące o trofeum.</p>
+            <a class="btn btn-outline-primary" asp-controller="Teams" asp-action="Index">Przejdź</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Piłkarze</h3>
+            <p>Odkryj gwiazdy na boisku.</p>
+            <a class="btn btn-outline-primary" asp-controller="Players" asp-action="Index">Przejdź</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .btn-primary {
+        background-color: #003087; /* Granatowy kolor UEFA */
+        border-color: #003087;
+    }
+    .btn-primary:hover {
+        background-color: #ffd700; /* Złoty na hover */
+        border-color: #ffd700;
+        color: #003087;
+    }
+</style>

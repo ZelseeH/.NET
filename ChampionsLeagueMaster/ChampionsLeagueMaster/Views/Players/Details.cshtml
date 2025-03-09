@@ -1,0 +1,38 @@
+﻿@model ChampionsLeagueMaster.Models.Player
+
+@{
+    ViewData["Title"] = "Szczegóły zawodnika";
+}
+
+<div class="container py-4">
+    <h1 class="text-center mb-4 display-5 fw-bold text-primary">Szczegóły Zawodnika</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Imię</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.FirstName)</dd>
+
+                <dt class="col-sm-3 fw-bold">Nazwisko</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
+
+                <dt class="col-sm-3 fw-bold">Zespół</dt>
+                <dd class="col-sm-9">@(Model.Team?.Name ?? "Brak zespołu")</dd>
+
+                <dt class="col-sm-3 fw-bold">Pozycja</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Position)</dd>
+
+                <dt class="col-sm-3 fw-bold">Numer na koszulce</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.JerseyNumber)</dd>
+
+                <dt class="col-sm-3 fw-bold">Data urodzenia</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.BirthDate)</dd>
+            </dl>
+
+            <div class="mt-3">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edytuj</a>
+                <a asp-action="Index" class="btn btn-secondary">Wróć</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+﻿@model ChampionsLeagueMaster.Models.Result
+
+@{
+    ViewData["Title"] = "Edytuj wynik meczu";
+}
+
+<div class="container py-4">
+    <h1 class="text-center mb-4 display-5 fw-bold text-primary">Edytuj Wynik Meczu</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="HomeTeamId" class="form-label fw-bold">Gospodarz</label>
+                        <select asp-for="HomeTeamId" class="form-control" asp-items="ViewBag.Teams"></select>
+                        <span asp-validation-for="HomeTeamId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="AwayTeamId" class="form-label fw-bold">Goście</label>
+                        <select asp-for="AwayTeamId" class="form-control" asp-items="ViewBag.Teams"></select>
+                        <span asp-validation-for="AwayTeamId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="HomeTeamGoals" class="form-label fw-bold">Gole gospodarzy</label>
+                        <input asp-for="HomeTeamGoals" class="form-control" type="number" />
+                        <span asp-validation-for="HomeTeamGoals" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="AwayTeamGoals" class="form-label fw-bold">Gole gości</label>
+                        <input asp-for="AwayTeamGoals" class="form-control" type="number" />
+                        <span asp-validation-for="AwayTeamGoals" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MatchDay" class="form-label fw-bold">Data meczu</label>
+                        <input asp-for="MatchDay" class="form-control" type="date" />
+                        <span asp-validation-for="MatchDay" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MatchTime" class="form-label fw-bold">Godzina meczu</label>
+                        <input asp-for="MatchTime" class="form-control" type="time" />
+                        <span asp-validation-for="MatchTime" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Season" class="form-label fw-bold">Sezon</label>
+                        <input asp-for="Season" class="form-control" />
+                        <span asp-validation-for="Season" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Status" class="form-label fw-bold">Status</label>
+                        <input asp-for="Status" class="form-control" />
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Round" class="form-label fw-bold">Runda</label>
+                        <input asp-for="Round" class="form-control" />
+                        <span asp-validation-for="Round" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Zapisz</button>
+                    <a asp-action="Index" class="btn btn-secondary">Wróć</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
