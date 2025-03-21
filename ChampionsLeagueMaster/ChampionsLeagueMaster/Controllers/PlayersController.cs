@@ -17,12 +17,11 @@ namespace ChampionsLeagueMaster.Controllers
 
         public async Task<IActionResult> Index(string teamName, string position, string sortOrder)
         {
-            // Zapisz bieżące filtry w ViewData
+        
             ViewData["CurrentTeamFilter"] = teamName;
             ViewData["CurrentPositionFilter"] = position;
             ViewData["CurrentSortOrder"] = sortOrder;
 
-            // Pobierz dostępne pozycje i przekaż je do widoku
             ViewData["AvailablePositions"] = await _playerService.GetAvailablePositionsAsync();
 
             var playersQuery = await _playerService.GetAllPlayersAsync(teamName, position, sortOrder);

@@ -59,7 +59,6 @@ namespace ChampionsLeagueMaster.Services
             var teams = await _teamRepository.GetAllAsync();
             if (teams == null || !teams.Any())
             {
-                // Zwróć pustą listę zamiast null
                 return new List<SelectListItem>();
             }
 

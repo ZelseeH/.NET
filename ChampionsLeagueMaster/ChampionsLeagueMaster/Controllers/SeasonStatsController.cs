@@ -1,40 +1,30 @@
 ﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Repository;
+using ChampionsLeagueMaster.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
 {
     public class SeasonStatsController : Controller
     {
-        private readonly ISeasonStatsRepository _seasonStatsRepository;
+        private readonly ISeasonStatsService _seasonStatsService;
 
-        public SeasonStatsController(ISeasonStatsRepository seasonStatsRepository)
+        public SeasonStatsController(ISeasonStatsService seasonStatsService)
         {
-            _seasonStatsRepository = seasonStatsRepository;
+            _seasonStatsService = seasonStatsService;
         }
 
         public async Task<IActionResult> Index(string season)
         {
-            var seasons = await _seasonStatsRepository.GetSeasonsAsync();
+            var seasons = await _seasonStatsService.GetSeasonsAsync();
+            var defaultSeason = await _seasonStatsService.GetDefaultSeasonAsync();
 
-            if (!seasons.Any())
-            {
-                seasons = new List<string> { "2024/2025" };
-            }
-
-            var defaultSeason = seasons.First();
             ViewBag.Seasons = seasons;
             ViewBag.SelectedSeason = season ?? defaultSeason;
 
-            var stats = await _seasonStatsRepository.GetAllAsync();
+            var stats = await _seasonStatsService.GetSeasonStatsAsync(season);
 
-            stats = stats.Where(s => s.Season == (season ?? defaultSeason))
-                         .OrderByDescending(s => s.Points)
-                         .ThenByDescending(s => s.GoalsScored - s.GoalsConceded)
-                         .ThenByDescending(s => s.GoalsScored);
-
-            return View(await stats.ToListAsync());
+            return View(stats);
         }
     }
 }

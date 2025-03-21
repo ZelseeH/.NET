@@ -17,6 +17,7 @@ builder.Services.AddScoped<IResultRepository, ResultRepository>();
 builder.Services.AddScoped<IPlayerService, PlayerService>();
 builder.Services.AddScoped<IResultService, ResultService>();
 builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<ISeasonStatsService, SeasonStatsService>();
 
 
 builder.Services.AddControllersWithViews();
