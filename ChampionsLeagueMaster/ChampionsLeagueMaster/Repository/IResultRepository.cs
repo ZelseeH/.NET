@@ -6,8 +6,6 @@ namespace ChampionsLeagueMaster.Repository
     {
         Task<IQueryable<Result>> GetAllAsync();
         Task<Result?> GetByIdAsync(int id);
-        Task<List<string>> GetSeasonsAsync();
-        Task<List<string>> GetRoundsAsync();
         Task InsertAsync(Result result);
         Task UpdateAsync(Result result);
         Task DeleteAsync(int id);

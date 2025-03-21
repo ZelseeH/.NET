@@ -1,69 +1,63 @@
 ﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Repository;
+using ChampionsLeagueMaster.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
 {
     public class TeamsController : Controller
     {
-        private readonly ITeamRepository _teamRepository;
+        private readonly ITeamService _teamService;
 
-        public TeamsController(ITeamRepository teamRepository)
+        public TeamsController(ITeamService teamService)
         {
-            _teamRepository = teamRepository;
+            _teamService = teamService;
         }
 
-        // GET: Teams
         public async Task<IActionResult> Index()
         {
-            var teams = await _teamRepository.GetAllAsync();
-            return View(teams);
+            var teams = await _teamService.GetAllTeamsAsync();
+            return View(await teams.ToListAsync());
         }
 
-        // GET: Teams/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Teams/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Team team)
         {
             if (ModelState.IsValid)
             {
-                await _teamRepository.InsertAsync(team);
-                await _teamRepository.SaveAsync();
+                await _teamService.CreateTeamAsync(team);
                 return RedirectToAction(nameof(Index));
             }
             return View(team);
         }
 
-        // GET: Teams/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
 
-            var team = await _teamRepository.GetByIdAsync(id.Value);
+            var team = await _teamService.GetTeamByIdAsync(id.Value);
             if (team == null) return NotFound();
 
             return View(team);
         }
 
-        // GET: Teams/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
 
-            var team = await _teamRepository.GetByIdAsync(id.Value);
+            var team = await _teamService.GetTeamByIdAsync(id.Value);
             if (team == null) return NotFound();
 
             return View(team);
         }
 
-        // POST: Teams/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Team team)
@@ -74,12 +68,11 @@ namespace ChampionsLeagueMaster.Controllers
             {
                 try
                 {
-                    await _teamRepository.UpdateAsync(team);
-                    await _teamRepository.SaveAsync();
+                    await _teamService.UpdateTeamAsync(team);
                 }
                 catch
                 {
-                    if (!await _teamRepository.ExistsAsync(team.Id))
+                    if (!await _teamService.TeamExistsAsync(team.Id))
                         return NotFound();
                     else
                         throw;
@@ -89,24 +82,21 @@ namespace ChampionsLeagueMaster.Controllers
             return View(team);
         }
 
-        // GET: Teams/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
 
-            var team = await _teamRepository.GetByIdAsync(id.Value);
+            var team = await _teamService.GetTeamByIdAsync(id.Value);
             if (team == null) return NotFound();
 
             return View(team);
         }
 
-        // POST: Teams/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _teamRepository.DeleteAsync(id);
-            await _teamRepository.SaveAsync();
+            await _teamService.DeleteTeamAsync(id);
             return RedirectToAction(nameof(Index));
         }
     }

@@ -1,44 +1,36 @@
 ﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Repository;
+using ChampionsLeagueMaster.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChampionsLeagueMaster.Controllers
 {
     public class ResultsController : Controller
     {
-        private readonly IResultRepository _resultRepository;
-        private readonly ITeamRepository _teamRepository; 
+        private readonly IResultService _resultService;
 
-        public ResultsController(IResultRepository resultRepository, ITeamRepository teamRepository)
+        public ResultsController(IResultService resultService)
         {
-            _resultRepository = resultRepository;
-            _teamRepository = teamRepository; // Inject ITeamRepository
+            _resultService = resultService;
         }
 
         public async Task<IActionResult> Index(string season, string round)
         {
-            var seasons = await _resultRepository.GetSeasonsAsync();
-            var rounds = await _resultRepository.GetRoundsAsync();
+            var seasons = await _resultService.GetSeasonsAsync();
+            var rounds = await _resultService.GetRoundsAsync();
 
             ViewBag.Seasons = seasons;
             ViewBag.Rounds = rounds;
             ViewBag.SelectedSeason = season ?? seasons.FirstOrDefault();
             ViewBag.SelectedRound = round ?? rounds.FirstOrDefault();
 
-            var results = await _resultRepository.GetAllAsync();
-
-            results = results.Where(r => r.Season == (season ?? seasons.FirstOrDefault()))
-                             .Where(r => r.Round == (round ?? rounds.FirstOrDefault()));
-
+            var results = await _resultService.GetAllResultsAsync(season, round);
             return View(await results.ToListAsync());
         }
 
         public async Task<IActionResult> Create()
         {
-            var teams = await _teamRepository.GetAllAsync();
-            ViewBag.Teams = teams; // Pass teams directly, as the view expects a collection
+            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
             return View();
         }
 
@@ -48,12 +40,10 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _resultRepository.InsertAsync(result);
-                await _resultRepository.SaveAsync();
+                await _resultService.CreateResultAsync(result);
                 return RedirectToAction(nameof(Index));
             }
-            var teams = await _teamRepository.GetAllAsync();
-            ViewBag.Teams = teams; // Pass teams again if validation fails
+            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
             return View(result);
         }
 
@@ -61,15 +51,10 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id == null) return NotFound();
 
-            var result = await _resultRepository.GetByIdAsync(id.Value);
+            var result = await _resultService.GetResultByIdAsync(id.Value);
             if (result == null) return NotFound();
 
-            var teams = await _teamRepository.GetAllAsync();
-            ViewBag.Teams = teams.Select(t => new SelectListItem
-            {
-                Value = t.Id.ToString(),
-                Text = t.Name ?? "Unknown Team"
-            }).ToList();
+            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
             return View(result);
         }
 
@@ -83,23 +68,17 @@ namespace ChampionsLeagueMaster.Controllers
             {
                 try
                 {
-                    await _resultRepository.UpdateAsync(result);
-                    await _resultRepository.SaveAsync();
+                    await _resultService.UpdateResultAsync(result);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (await _resultRepository.GetByIdAsync(id) == null) return NotFound();
+                    if (await _resultService.GetResultByIdAsync(id) == null) return NotFound();
                     else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
 
-            var teams = await _teamRepository.GetAllAsync();
-            ViewBag.Teams = teams.Select(t => new SelectListItem
-            {
-                Value = t.Id.ToString(),
-                Text = t.Name ?? "Unknown Team"
-            }).ToList();
+            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
             return View(result);
         }
 
@@ -107,7 +86,7 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id == null) return NotFound();
 
-            var result = await _resultRepository.GetByIdAsync(id.Value);
+            var result = await _resultService.GetResultByIdAsync(id.Value);
             if (result == null) return NotFound();
 
             return View(result);
@@ -117,7 +96,7 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id == null) return NotFound();
 
-            var result = await _resultRepository.GetByIdAsync(id.Value);
+            var result = await _resultService.GetResultByIdAsync(id.Value);
             if (result == null) return NotFound();
 
             return View(result);
@@ -127,8 +106,7 @@ namespace ChampionsLeagueMaster.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _resultRepository.DeleteAsync(id);
-            await _resultRepository.SaveAsync();
+            await _resultService.DeleteResultAsync(id);
             return RedirectToAction(nameof(Index));
         }
     }

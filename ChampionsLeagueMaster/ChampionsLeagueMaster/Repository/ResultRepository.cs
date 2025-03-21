@@ -29,24 +29,6 @@ namespace ChampionsLeagueMaster.Repository
                 .FirstOrDefaultAsync(r => r.Id == id);
         }
 
-        public async Task<List<string>> GetSeasonsAsync()
-        {
-            return await _context.Results
-                .Select(r => r.Season)
-                .Distinct()
-                .OrderByDescending(s => s)
-                .ToListAsync();
-        }
-
-        public async Task<List<string>> GetRoundsAsync()
-        {
-            return await _context.Results
-                .Select(r => r.Round)
-                .Distinct()
-                .OrderByDescending(r => r)
-                .ToListAsync();
-        }
-
         public async Task InsertAsync(Result result)
         {
             await _context.Results.AddAsync(result);

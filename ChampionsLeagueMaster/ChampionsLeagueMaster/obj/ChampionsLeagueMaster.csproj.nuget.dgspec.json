@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj": {}
+    "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj": {
+    "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj",
+        "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj",
         "projectName": "ChampionsLeagueMaster",
-        "projectPath": "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj",
+        "projectPath": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\obj\\",
+        "outputPath": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,53 +1,39 @@
 ﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Repository;
+using ChampionsLeagueMaster.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
+using ChampionsLeagueMaster.Repository;
 
 namespace ChampionsLeagueMaster.Controllers
 {
     public class PlayersController : Controller
     {
-        private readonly IPlayerRepository _playerRepository;
-        private readonly ITeamRepository _teamRepository;
+        private readonly IPlayerService _playerService;
 
-        public PlayersController(IPlayerRepository playerRepository, ITeamRepository teamRepository)
+        public PlayersController(IPlayerService playerService)
         {
-            _playerRepository = playerRepository;
-            _teamRepository = teamRepository;
+            _playerService = playerService;
         }
 
         public async Task<IActionResult> Index(string teamName, string position, string sortOrder)
         {
-            var players = await _playerRepository.GetAllAsync();
+            // Zapisz bieżące filtry w ViewData
+            ViewData["CurrentTeamFilter"] = teamName;
+            ViewData["CurrentPositionFilter"] = position;
+            ViewData["CurrentSortOrder"] = sortOrder;
 
-            if (!string.IsNullOrEmpty(teamName))
-            {
-                players = players.Where(p => p.Team.Name.Contains(teamName));
-            }
+            // Pobierz dostępne pozycje i przekaż je do widoku
+            ViewData["AvailablePositions"] = await _playerService.GetAvailablePositionsAsync();
 
-            if (!string.IsNullOrEmpty(position))
-            {
-                players = players.Where(p => p.Position == position);
-            }
-
-            players = sortOrder switch
-            {
-                "firstname_desc" => players.OrderByDescending(p => p.FirstName),
-                "lastname_asc" => players.OrderBy(p => p.LastName),
-                "lastname_desc" => players.OrderByDescending(p => p.LastName),
-                _ => players.OrderBy(p => p.FirstName),
-            };
-
-            return View(await players.ToListAsync());
+            var playersQuery = await _playerService.GetAllPlayersAsync(teamName, position, sortOrder);
+            var players = await playersQuery.ToListAsync();
+            return View(players);
         }
+
 
         public async Task<IActionResult> Create()
         {
-            var teams = await _teamRepository.GetAllAsync();
-            ViewData["Teams"] = new SelectList(await teams.ToListAsync(), "Id", "Name");
+            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync();
             return View();
         }
 
@@ -57,13 +43,11 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _playerRepository.InsertAsync(player);
-                await _playerRepository.SaveAsync();
+                await _playerService.CreatePlayerAsync(player);
                 return RedirectToAction(nameof(Index));
             }
 
-            var teams = await _teamRepository.GetAllAsync();
-            ViewData["Teams"] = new SelectList(await teams.ToListAsync(), "Id", "Name");
+            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
             return View(player);
         }
 
@@ -72,12 +56,11 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerRepository.GetByIdAsync(id.Value);
+            var player = await _playerService.GetPlayerByIdAsync(id.Value);
             if (player == null)
                 return NotFound();
 
-            var teams = await _teamRepository.GetAllAsync();
-            ViewData["Teams"] = new SelectList(await teams.ToListAsync(), "Id", "Name", player.TeamId);
+            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
             return View(player);
         }
 
@@ -90,13 +73,11 @@ namespace ChampionsLeagueMaster.Controllers
 
             if (ModelState.IsValid)
             {
-                await _playerRepository.UpdateAsync(player);
-                await _playerRepository.SaveAsync();
+                await _playerService.UpdatePlayerAsync(player);
                 return RedirectToAction(nameof(Index));
             }
 
-            var teams = await _teamRepository.GetAllAsync();
-            ViewData["Teams"] = new SelectList(await teams.ToListAsync(), "Id", "Name", player.TeamId);
+            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
             return View(player);
         }
 
@@ -105,7 +86,7 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerRepository.GetByIdAsync(id.Value);
+            var player = await _playerService.GetPlayerByIdAsync(id.Value);
             if (player == null)
                 return NotFound();
 
@@ -117,7 +98,7 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerRepository.GetByIdAsync(id.Value);
+            var player = await _playerService.GetPlayerByIdAsync(id.Value);
             if (player == null)
                 return NotFound();
 
@@ -128,8 +109,7 @@ namespace ChampionsLeagueMaster.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _playerRepository.DeleteAsync(id);
-            await _playerRepository.SaveAsync();
+            await _playerService.DeletePlayerAsync(id);
             return RedirectToAction(nameof(Index));
         }
     }
