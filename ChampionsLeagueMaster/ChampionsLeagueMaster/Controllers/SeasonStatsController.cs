@@ -1,4 +1,5 @@
-﻿using ChampionsLeagueMaster.Data;
+﻿using ChampionsLeagueMaster.Models;
+using ChampionsLeagueMaster.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,43 +7,34 @@ namespace ChampionsLeagueMaster.Controllers
 {
     public class SeasonStatsController : Controller
     {
-        private readonly ChampionsLeagueMasterContext _context;
+        private readonly ISeasonStatsRepository _seasonStatsRepository;
 
-        public SeasonStatsController(ChampionsLeagueMasterContext context)
+        public SeasonStatsController(ISeasonStatsRepository seasonStatsRepository)
         {
-            _context = context;
+            _seasonStatsRepository = seasonStatsRepository;
         }
-        public IActionResult Index(string season)
-        {
-            // Pobierz unikalne, niepuste sezony i posortuj malejąco
-            var seasons = _context.SeasonStats
-                .Select(s => s.Season)
-                .Distinct()
-                .Where(s => !string.IsNullOrEmpty(s)) // Usuń puste wartości
-                .OrderByDescending(s => s)
-                .ToList();
 
-            // Jeśli nie ma sezonów, ustaw domyślnie "2024/2025"
+        public async Task<IActionResult> Index(string season)
+        {
+            var seasons = await _seasonStatsRepository.GetSeasonsAsync();
+
             if (!seasons.Any())
             {
                 seasons = new List<string> { "2024/2025" };
             }
 
-            // Ustaw domyślny sezon na najnowszy
             var defaultSeason = seasons.First();
             ViewBag.Seasons = seasons;
             ViewBag.SelectedSeason = season ?? defaultSeason;
 
-            var stats = _context.SeasonStats
-                .Include(s => s.Team)
-                .Where(s => s.Season == (season ?? defaultSeason));
+            var stats = await _seasonStatsRepository.GetAllAsync();
 
-            // Sortowanie według punktów i różnicy bramek
-            stats = stats.OrderByDescending(s => s.Points)
+            stats = stats.Where(s => s.Season == (season ?? defaultSeason))
+                         .OrderByDescending(s => s.Points)
                          .ThenByDescending(s => s.GoalsScored - s.GoalsConceded)
                          .ThenByDescending(s => s.GoalsScored);
 
-            return View(stats.ToList());
+            return View(await stats.ToListAsync());
         }
     }
 }
