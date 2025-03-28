@@ -236,21 +236,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPlayerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:46:49.984Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -261,21 +248,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:46:39.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ISeasonStatsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:47:06.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T13:46:39.275Z"
             },
             {
               "$type": "Document",
@@ -292,6 +265,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPlayerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:46:49.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISeasonStatsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:47:06.697Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ITeamRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
@@ -300,8 +297,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:33:46.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T13:33:46.003Z"
             },
             {
               "$type": "Document",
@@ -313,8 +309,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:56:17.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T13:56:17.855Z"
             },
             {
               "$type": "Document",
@@ -326,8 +321,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAcwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:52:37.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T13:52:37.949Z"
             },
             {
               "$type": "Document",
@@ -339,8 +333,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:35:53.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T13:35:53.673Z"
             },
             {
               "$type": "Document",
@@ -352,8 +345,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:15:57.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T20:15:57.096Z"
             },
             {
               "$type": "Document",
@@ -365,8 +357,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:43:28.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T21:43:28.055Z"
             },
             {
               "$type": "Document",
@@ -378,8 +369,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:36:13.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T21:36:13.367Z"
             },
             {
               "$type": "Document",
@@ -391,8 +381,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:11:48.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T20:11:48.931Z"
             },
             {
               "$type": "Document",
@@ -404,8 +393,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:13:20.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T20:13:20.192Z"
             },
             {
               "$type": "Document",
@@ -417,8 +405,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:03:17.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T20:03:17.267Z"
             },
             {
               "$type": "Document",
@@ -430,8 +417,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\TeamService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:45:22.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:45:22.323Z"
             },
             {
               "$type": "Document",
@@ -443,8 +429,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:13:32.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T15:13:32.065Z"
             },
             {
               "$type": "Document",
@@ -456,8 +441,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:13:20.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T15:13:20.785Z"
             },
             {
               "$type": "Document",
@@ -469,8 +453,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ResultService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAmwD0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:25:31.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:25:31.352Z"
             },
             {
               "$type": "Document",
@@ -482,8 +465,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\PlayerService.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowEQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:17:35.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:17:35.663Z"
             },
             {
               "$type": "Document",
@@ -495,8 +477,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\IPlayerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:17:26.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:17:26.227Z"
             },
             {
               "$type": "Document",
@@ -508,8 +489,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ITeamService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:45:15.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:45:15.259Z"
             },
             {
               "$type": "Document",
@@ -521,8 +501,7 @@
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\IResultService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:25:23.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:25:23.342Z"
             },
             {
               "$type": "Document",
