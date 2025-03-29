@@ -13,6 +13,6 @@
         public int? GoalsConceded { get; set; }
         public int GoalDifference { get; private set; }
 
-        public Team? Team { get; set; } // Changed to singular Team
+        public Team? Team { get; set; } 
     }
 }

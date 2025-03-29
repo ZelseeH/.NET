@@ -1,16 +1,18 @@
 ﻿using ChampionsLeagueMaster.Models;
-using System.Linq;
+using ChampionsLeagueMaster.ViewModels.Teams;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Services
 {
     public interface ITeamService
     {
-        Task<IQueryable<Team>> GetAllTeamsAsync();
-        Task<Team?> GetTeamByIdAsync(int id);
-        Task CreateTeamAsync(Team team);
-        Task UpdateTeamAsync(Team team);
+        Task<PaginatedList<TeamViewModel>> GetPaginatedTeamsAsync(string countryFilter, string sortOrder, int pageIndex, int pageSize);
+        Task<TeamViewModel?> GetTeamViewModelAsync(int id);
+        Task CreateTeamAsync(TeamCreateEditViewModel teamViewModel);
+        Task UpdateTeamAsync(TeamCreateEditViewModel teamViewModel);
         Task DeleteTeamAsync(int id);
         Task<bool> TeamExistsAsync(int id);
+        Task<List<string>> GetAvailableCountriesAsync();
     }
 }

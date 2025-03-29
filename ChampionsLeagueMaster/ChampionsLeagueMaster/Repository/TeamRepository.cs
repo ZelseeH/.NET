@@ -3,7 +3,6 @@ using ChampionsLeagueMaster.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace ChampionsLeagueMaster.Repository
 {
@@ -14,6 +13,11 @@ namespace ChampionsLeagueMaster.Repository
         public TeamRepository(ChampionsLeagueMasterContext context)
         {
             _context = context;
+        }
+
+        public IQueryable<Team> GetTeamsQueryable()
+        {
+            return _context.Teams.AsNoTracking().AsQueryable();
         }
 
         public Task<IQueryable<Team>> GetAllAsync()
@@ -56,4 +60,5 @@ namespace ChampionsLeagueMaster.Repository
             await _context.SaveChangesAsync();
         }
     }
+
 }

@@ -1,4 +1,4 @@
-﻿@model ChampionsLeagueMaster.Models.Player
+﻿@model ChampionsLeagueMaster.ViewModels.Players.PlayerCreateEditViewModel
 
 @{
     ViewData["Title"] = "Edytuj zawodnika";
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="TeamId" class="form-label fw-bold">Zespół</label>
-                        <select asp-for="TeamId" class="form-control" asp-items="ViewBag.Teams"></select>
+                        <select asp-for="TeamId" class="form-control" asp-items="Model.Teams"></select>
                         <span asp-validation-for="TeamId" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -43,6 +43,11 @@
                         <label asp-for="BirthDate" class="form-label fw-bold">Data urodzenia</label>
                         <input asp-for="BirthDate" class="form-control" type="date" />
                         <span asp-validation-for="BirthDate" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Country" class="form-label fw-bold">Kraj</label>
+                        <input asp-for="Country" class="form-control" />
+                        <span asp-validation-for="Country" class="text-danger"></span>
                     </div>
                 </div>
 

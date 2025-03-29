@@ -1,8 +1,7 @@
 ﻿using ChampionsLeagueMaster.Models;
 using ChampionsLeagueMaster.Services;
+using ChampionsLeagueMaster.ViewModels.Players;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ChampionsLeagueMaster.Repository;
 
 namespace ChampionsLeagueMaster.Controllers
 {
@@ -14,40 +13,45 @@ namespace ChampionsLeagueMaster.Controllers
         {
             _playerService = playerService;
         }
-
-        public async Task<IActionResult> Index(string teamName, string position, string sortOrder)
+        public async Task<IActionResult> Index(string teamName, string position, string sortOrder, int pageIndex = 1, int pageSize = 10)
         {
-        
-            ViewData["CurrentTeamFilter"] = teamName;
-            ViewData["CurrentPositionFilter"] = position;
-            ViewData["CurrentSortOrder"] = sortOrder;
+            var paginatedPlayers = await _playerService.GetPaginatedPlayerViewModelsAsync(teamName, position, sortOrder, pageIndex, pageSize);
 
-            ViewData["AvailablePositions"] = await _playerService.GetAvailablePositionsAsync();
+            var viewModel = new PlayerListViewModel
+            {
+                Players = paginatedPlayers,
+                CurrentTeamFilter = teamName,
+                CurrentPositionFilter = position,
+                CurrentSortOrder = sortOrder,
+                AvailablePositions = await _playerService.GetAvailablePositionsAsync()
+            };
 
-            var playersQuery = await _playerService.GetAllPlayersAsync(teamName, position, sortOrder);
-            var players = await playersQuery.ToListAsync();
-            return View(players);
+            return View(viewModel);
         }
+
 
 
         public async Task<IActionResult> Create()
         {
-            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync();
-            return View();
+            var viewModel = new PlayerCreateEditViewModel
+            {
+                Teams = await _playerService.GetTeamsSelectListAsync()
+            };
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Player player)
+        public async Task<IActionResult> Create(PlayerCreateEditViewModel playerViewModel)
         {
             if (ModelState.IsValid)
             {
-                await _playerService.CreatePlayerAsync(player);
+                await _playerService.CreatePlayerAsync(playerViewModel);
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
-            return View(player);
+            playerViewModel.Teams = await _playerService.GetTeamsSelectListAsync(playerViewModel.TeamId);
+            return View(playerViewModel);
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -55,29 +59,28 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerService.GetPlayerByIdAsync(id.Value);
-            if (player == null)
+            var playerViewModel = await _playerService.GetPlayerForEditAsync(id.Value);
+            if (playerViewModel == null)
                 return NotFound();
 
-            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
-            return View(player);
+            return View(playerViewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Player player)
+        public async Task<IActionResult> Edit(int id, PlayerCreateEditViewModel playerViewModel)
         {
-            if (id != player.Id)
+            if (id != playerViewModel.Id)
                 return NotFound();
 
             if (ModelState.IsValid)
             {
-                await _playerService.UpdatePlayerAsync(player);
+                await _playerService.UpdatePlayerAsync(playerViewModel);
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["Teams"] = await _playerService.GetTeamsSelectListAsync(player.TeamId);
-            return View(player);
+            playerViewModel.Teams = await _playerService.GetTeamsSelectListAsync(playerViewModel.TeamId);
+            return View(playerViewModel);
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -85,11 +88,11 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerService.GetPlayerByIdAsync(id.Value);
-            if (player == null)
+            var playerViewModel = await _playerService.GetPlayerViewModelByIdAsync(id.Value);
+            if (playerViewModel == null)
                 return NotFound();
 
-            return View(player);
+            return View(playerViewModel);
         }
 
         public async Task<IActionResult> Delete(int? id)
@@ -97,11 +100,11 @@ namespace ChampionsLeagueMaster.Controllers
             if (id == null)
                 return NotFound();
 
-            var player = await _playerService.GetPlayerByIdAsync(id.Value);
-            if (player == null)
+            var playerViewModel = await _playerService.GetPlayerViewModelByIdAsync(id.Value);
+            if (playerViewModel == null)
                 return NotFound();
 
-            return View(player);
+            return View(playerViewModel);
         }
 
         [HttpPost, ActionName("Delete")]

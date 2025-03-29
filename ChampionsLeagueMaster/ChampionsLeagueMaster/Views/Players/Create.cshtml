@@ -1,4 +1,4 @@
-﻿@model ChampionsLeagueMaster.Models.Player
+﻿@model ChampionsLeagueMaster.ViewModels.Players.PlayerCreateEditViewModel
 
 @{
     ViewData["Title"] = "Create Player";
@@ -24,15 +24,12 @@
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
 
-      <div class="form-group">
-        <label asp-for="TeamId" class="control-label"></label>
-        <select asp-for="TeamId" class="form-control" asp-items="ViewBag.Teams">
-        <option value="">-- Wybierz drużynę --</option>
-         </select>
-    </div>
-
-
-
+            <div class="form-group">
+                <label asp-for="TeamId" class="control-label"></label>
+                <select asp-for="TeamId" class="form-control" asp-items="Model.Teams">
+                    <option value="">-- Wybierz drużynę --</option>
+                </select>
+            </div>
 
             <div class="form-group">
                 <label asp-for="Position" class="control-label"></label>

@@ -3,28 +3,156 @@
   "WorkspaceRootPath": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\teamlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\teamlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\teamcreateeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\teamcreateeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iseasonstatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iseasonstatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\playerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\playerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\playerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\playerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\viewmodel\\playercreateeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\viewmodel\\playercreateeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\seasonstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\seasonstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\seasonstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\seasonstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\championsleaguemastercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\championsleaguemastercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iseasonstatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iseasonstatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\iresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\iresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\repository\\seasonstatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +163,8 @@
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\repository\\resultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\seasonstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\seasonstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\resultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\resultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,40 +175,12 @@
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\servicestatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\servicestatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iseasonstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iseasonstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\services\\iresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\services\\iresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\results\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -105,52 +193,16 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307211653_kuba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\seasonstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\seasonstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\migrations\\20250308095658_seter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\migrations\\20250308095658_seter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\results\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\results\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\players\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\players\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\results\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\results\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\championsleaguemastercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\championsleaguemastercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\results\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -161,24 +213,8 @@
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\results\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\migrations\\20250307213314_kuba6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -205,20 +241,12 @@
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\migrations\\20250307212045_kuba2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\migrations\\20250307212045_kuba2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|solutionrelative:championsleaguemaster\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A3219EA-105A-4E18-9A35-0640BAFB25B4}|ChampionsLeagueMaster\\ChampionsLeagueMaster.csproj|c:\\users\\kuba\\desktop\\dotnet\\.net\\championsleaguemaster\\championsleaguemaster\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -236,232 +264,236 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPlayerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:46:49.984Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IResultRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:46:39.275Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAYwGMAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T20:16:03.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ISeasonStatsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:47:06.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:48:14.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITeamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:33:46.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResultRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:56:17.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SeasonStatsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:52:37.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T13:35:53.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TeamsController.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:15:57.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SeasonStatsController.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:43:28.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ResultsController.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:36:13.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayersController.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:11:48.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:13:20.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Program.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Program.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Program.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:03:17.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "TeamService.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\TeamService.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\TeamService.cs",
               "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\TeamService.cs",
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\TeamService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:45:22.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceStatsService.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "TeamListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamListViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\TeamListViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamListViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\TeamListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:13:32.065Z",
+              "WhenOpened": "2025-03-28T15:21:33.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeamViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\TeamViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\TeamViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:21:44.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TeamCreateEditViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamCreateEditViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\TeamCreateEditViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\TeamCreateEditViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\TeamCreateEditViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:21:23.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITeamService.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ITeamService.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ITeamService.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ITeamService.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ITeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T14:45:15.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T21:09:03.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T21:09:39.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\TeamsController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:15:57.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T20:16:15.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T21:09:20.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\TeamRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:35:53.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ITeamRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:33:46.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Team.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:50:31.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T20:11:58.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T21:46:00.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ISeasonStatsService.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:13:20.785Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T22:51:47.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ResultService.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ResultService.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ResultService.cs",
@@ -474,41 +506,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "PlayerService.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\PlayerService.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\PlayerService.cs",
               "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\PlayerService.cs",
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\PlayerService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowEQAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAiwKcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:17:35.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "IPlayerService.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\IPlayerService.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\IPlayerService.cs",
               "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\IPlayerService.cs",
               "RelativeToolTip": "ChampionsLeagueMaster\\Services\\IPlayerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:17:26.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ITeamService.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ITeamService.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ITeamService.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ITeamService.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ITeamService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:45:15.259Z",
               "EditorCaption": ""
             },
             {
@@ -526,39 +545,81 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayersController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\PlayersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:11:48.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T20:11:58.834Z"
+              "Title": "PlayerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\PlayerViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\PlayerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:08:27.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-08T09:18:22.013Z"
+              "Title": "PlayerListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerListViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\PlayerListViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerListViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\PlayerListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:11:38.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PlayerCreateEditViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerCreateEditViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\ViewModel\\PlayerCreateEditViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\ViewModel\\PlayerCreateEditViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\ViewModel\\PlayerCreateEditViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:11:50.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SeasonStatsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\SeasonStatsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T21:43:28.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Player.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\Player.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Player.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "SeasonStats.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\SeasonStats.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\SeasonStats.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\SeasonStats.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\SeasonStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:49:58.913Z"
+              "WhenOpened": "2025-03-07T19:50:42.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -568,49 +629,248 @@
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\Result.cs",
               "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Result.cs",
               "RelativeToolTip": "ChampionsLeagueMaster\\Models\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:50:20.066Z"
+              "WhenOpened": "2025-03-07T19:50:20.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Team.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\Team.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Team.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\Team.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\Player.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:50:31.187Z"
+              "WhenOpened": "2025-03-07T19:49:58.913Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "SeasonStats.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\SeasonStats.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\SeasonStats.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\SeasonStats.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\SeasonStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\PaginatedList.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\PaginatedList.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\PaginatedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:50:42.002Z"
+              "WhenOpened": "2025-03-28T13:14:25.619Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Create.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAABBwDEAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T21:46:00.149Z"
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:56:05.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
+              "Title": "ChampionsLeagueMasterContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAswJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:49:48.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T22:52:03.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T22:58:04.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PlayerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\PlayerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:48:14.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IPlayerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IPlayerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:46:49.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ISeasonStatsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ISeasonStatsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:47:06.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IResultRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\IResultRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:46:39.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ResultRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\ResultRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:56:17.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SeasonStatsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Repository\\SeasonStatsRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:52:37.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ResultsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\ResultsController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAIBJwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T21:36:13.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:13:20.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Program.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Program.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Program.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:03:17.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ServiceStatsService.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ServiceStatsService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:13:32.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ISeasonStatsService.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Services\\ISeasonStatsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:13:20.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
+              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Results\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-08T09:18:22.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "20250308095658_seter.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250308095658_seter.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Migrations\\20250308095658_seter.cs",
@@ -622,19 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Delete.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowCgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T22:58:04.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Index.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Index.cshtml",
@@ -646,31 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T22:52:03.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Players\\Edit.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowD0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T22:51:47.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 50,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Edit.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Edit.cshtml",
@@ -682,19 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ChampionsLeagueMasterContext.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\ChampionsLeagueMasterContext.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAswJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:49:48.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 51,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Delete.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Delete.cshtml",
@@ -706,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 52,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Results\\Details.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Results\\Details.cshtml",
@@ -718,19 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Create.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAABBwBoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T20:16:15.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Shared\\_Layout.cshtml",
@@ -742,43 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Edit.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAABBwB8AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T21:09:20.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Index.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAABBwCcAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T20:16:03.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Details.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAABBwBwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T21:09:03.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "20250307213314_kuba6.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307213314_kuba6.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Migrations\\20250307213314_kuba6.cs",
@@ -790,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 55,
               "Title": "20250307213102_kuba5.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307213102_kuba5.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Migrations\\20250307213102_kuba5.cs",
@@ -802,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 56,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\SeasonStats\\Index.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\SeasonStats\\Index.cshtml",
@@ -814,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 57,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Home\\Privacy.cshtml",
@@ -826,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 58,
               "Title": "20250307213329_kuba7.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307213329_kuba7.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Migrations\\20250307213329_kuba7.cs",
@@ -838,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 59,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Home\\Index.cshtml",
@@ -850,19 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Views\\Teams\\Delete.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T21:09:39.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 46,
               "Title": "20250307211747_kuba2.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307211747_kuba2.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307211747_kuba2.cs",
@@ -873,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 47,
               "Title": "20250307211653_kuba.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307211653_kuba.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307211653_kuba.cs",
@@ -884,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 60,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\appsettings.json",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\appsettings.json",
@@ -896,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 61,
               "Title": "20250307212045_kuba2.cs",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Migrations\\20250307212045_kuba2.cs",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Migrations\\20250307212045_kuba2.cs",
@@ -908,19 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "ChampionsLeagueMaster\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T19:56:05.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\_ViewImports.cshtml",
@@ -932,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\DOTNET\\.NET\\ChampionsLeagueMaster\\ChampionsLeagueMaster\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "ChampionsLeagueMaster\\Views\\_ViewStart.cshtml",
@@ -941,10 +1081,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-07T20:46:58.383Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

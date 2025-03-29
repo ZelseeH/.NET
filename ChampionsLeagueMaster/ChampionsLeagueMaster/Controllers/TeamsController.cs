@@ -1,7 +1,7 @@
 ﻿using ChampionsLeagueMaster.Models;
 using ChampionsLeagueMaster.Services;
+using ChampionsLeagueMaster.ViewModels.Teams;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
@@ -15,34 +15,47 @@ namespace ChampionsLeagueMaster.Controllers
             _teamService = teamService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string countryFilter, string sortOrder, int? pageNumber)
         {
-            var teams = await _teamService.GetAllTeamsAsync();
-            return View(await teams.ToListAsync());
+            int pageSize = 10;
+            int pageIndex = pageNumber ?? 1;
+
+            var teams = await _teamService.GetPaginatedTeamsAsync(countryFilter, sortOrder, pageIndex, pageSize);
+            var availableCountries = await _teamService.GetAvailableCountriesAsync();
+
+            var viewModel = new TeamListViewModel
+            {
+                Teams = teams,
+                CurrentCountryFilter = countryFilter,
+                CurrentSortOrder = sortOrder,
+                AvailableCountries = availableCountries
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult Create()
         {
-            return View();
+            return View(new TeamCreateEditViewModel());
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Team team)
+        public async Task<IActionResult> Create(TeamCreateEditViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                await _teamService.CreateTeamAsync(team);
+                await _teamService.CreateTeamAsync(viewModel);
                 return RedirectToAction(nameof(Index));
             }
-            return View(team);
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
 
-            var team = await _teamService.GetTeamByIdAsync(id.Value);
+            var team = await _teamService.GetTeamViewModelAsync(id.Value);
             if (team == null) return NotFound();
 
             return View(team);
@@ -52,41 +65,49 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id == null) return NotFound();
 
-            var team = await _teamService.GetTeamByIdAsync(id.Value);
+            var team = await _teamService.GetTeamViewModelAsync(id.Value);
             if (team == null) return NotFound();
 
-            return View(team);
+            var viewModel = new TeamCreateEditViewModel
+            {
+                Id = team.Id,
+                Name = team.Name,
+                Country = team.Country,
+                FoundedAt = team.FoundedAt
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Team team)
+        public async Task<IActionResult> Edit(int id, TeamCreateEditViewModel viewModel)
         {
-            if (id != team.Id) return NotFound();
+            if (id != viewModel.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    await _teamService.UpdateTeamAsync(team);
+                    await _teamService.UpdateTeamAsync(viewModel);
                 }
                 catch
                 {
-                    if (!await _teamService.TeamExistsAsync(team.Id))
+                    if (!await _teamService.TeamExistsAsync(viewModel.Id))
                         return NotFound();
                     else
                         throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(team);
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
 
-            var team = await _teamService.GetTeamByIdAsync(id.Value);
+            var team = await _teamService.GetTeamViewModelAsync(id.Value);
             if (team == null) return NotFound();
 
             return View(team);

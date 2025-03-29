@@ -1,7 +1,7 @@
-﻿@model IEnumerable<ChampionsLeagueMaster.Models.Team>
+﻿@model ChampionsLeagueMaster.ViewModels.Teams.TeamListViewModel
 
 @{
-    ViewData["Title"] = "Teams";
+    ViewData["Title"] = "Zespoły";
 }
 
 <div class="container-fluid py-4 bg-light">
@@ -13,38 +13,114 @@
                 <div class="mb-3">
                     <a asp-action="Create" class="btn btn-success">Stwórz Zespół</a>
                 </div>
+
+                <form asp-action="Index" method="get" class="mb-3">
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <select name="countryFilter" class="form-control">
+                                <option value="">Wszystkie kraje</option>
+                                @foreach (var country in Model.AvailableCountries)
+                                {
+                                        <option value="@country" selected="@(country == Model.CurrentCountryFilter)">@country</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary">Filtruj</button>
+                            <a asp-action="Index" class="btn btn-secondary">Resetuj</a>
+                        </div>
+                    </div>
+                </form>
+
                 <table class="table table-sm table-bordered table-hover text-center align-middle mt-3">
                     <thead class="table-dark">
                         <tr>
-                            <th style="width: 40%">Nazwa Zespołu</th>
-                            <th style="width: 25%">Kraj Pochodzenia</th>
-                            <th style="width: 15%">Założony</th>
-                            <th style="width: 20%">Akcje</th>
+                            <th style="width: 35%">
+                                <a asp-action="Index" 
+                                   asp-route-sortOrder="@(Model.CurrentSortOrder == "name_asc" ? "name_desc" : "name_asc")"
+                                   asp-route-countryFilter="@Model.CurrentCountryFilter"
+                                   asp-route-pageNumber="1">
+                                    Nazwa Zespołu
+                                </a>
+                            </th>
+                            <th style="width: 25%">
+                                <a asp-action="Index" 
+                                   asp-route-sortOrder="@(Model.CurrentSortOrder == "country_asc" ? "country_desc" : "country_asc")"
+                                   asp-route-countryFilter="@Model.CurrentCountryFilter"
+                                   asp-route-pageNumber="1">
+                                    Kraj Pochodzenia
+                                </a>
+                            </th>
+                            <th style="width: 15%">
+                                <a asp-action="Index" 
+                                   asp-route-sortOrder="@(Model.CurrentSortOrder == "founded_asc" ? "founded_desc" : "founded_asc")"
+                                   asp-route-countryFilter="@Model.CurrentCountryFilter"
+                                   asp-route-pageNumber="1">
+                                    Rok założenia
+                                </a>
+                            </th>
+                            <th style="width: 25%">Akcje</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @if (Model.Teams != null && Model.Teams.Any())
+                        {
+                            @foreach (var item in Model.Teams)
+                            {
+                                        <tr>
+                                            <td class="fw-bold text-start">
+                                                <a asp-controller="Players" 
+                                                   asp-action="Index" 
+                                                   asp-route-teamName="@item.Name" 
+                                                   class="text-decoration-none">
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                                </a>
+                                            </td>
+                                            <td>@Html.DisplayFor(modelItem => item.Country)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.FoundedAt)</td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Szczegóły</a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
+                                            </td>
+                                        </tr>
+                            }
+                        }
+                        else
                         {
                                 <tr>
-                                    <td class="fw-bold text-start">
-                                        <a asp-controller="Players" 
-                                           asp-action="Index" 
-                                           asp-route-teamName="@item.Name" 
-                                           class="text-decoration-none">
-                                        @Html.DisplayFor(modelItem => item.Name)
-                                        </a>
-                                    </td>
-                                    <td>@Html.DisplayFor(modelItem => item.Country)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.FoundedAt)</td>
-                                    <td>
-                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
-                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Szczegóły</a>
-                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
-                                    </td>
+                                    <td colspan="4">Brak zespołów do wyświetlenia.</td>
                                 </tr>
                         }
                     </tbody>
                 </table>
+
+                @if (Model.Teams != null)
+                {
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div>
+                                <a asp-action="Index"
+                                   asp-route-pageNumber="@(Model.Teams.PageIndex - 1)"
+                                   asp-route-countryFilter="@Model.CurrentCountryFilter"
+                                   asp-route-sortOrder="@Model.CurrentSortOrder"
+                                   class="btn btn-primary @(Model.Teams.HasPreviousPage ? "" : "disabled")">
+                                    Poprzednia
+                                </a>
+                            </div>
+                            <div>
+                                Strona @Model.Teams.PageIndex z @Model.Teams.TotalPages
+                            </div>
+                            <div>
+                                <a asp-action="Index"
+                                   asp-route-pageNumber="@(Model.Teams.PageIndex + 1)"
+                                   asp-route-countryFilter="@Model.CurrentCountryFilter"
+                                   asp-route-sortOrder="@Model.CurrentSortOrder"
+                                   class="btn btn-primary @(Model.Teams.HasNextPage ? "" : "disabled")">
+                                    Następna
+                                </a>
+                            </div>
+                        </div>
+                }
             </div>
         </div>
     </div>

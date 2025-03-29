@@ -1,11 +1,13 @@
-﻿@model IEnumerable<ChampionsLeagueMaster.Models.Player>
+﻿@using ChampionsLeagueMaster.ViewModels.Teams
+
+@model ChampionsLeagueMaster.ViewModels.Players.PlayerListViewModel
 
 @{
     ViewData["Title"] = "Players";
-    string currentTeamFilter = ViewData["CurrentTeamFilter"]?.ToString() ?? "";
-    string currentPositionFilter = ViewData["CurrentPositionFilter"]?.ToString() ?? "";
-    string currentSortOrder = ViewData["CurrentSortOrder"]?.ToString() ?? "asc";
-    var availablePositions = ViewData["AvailablePositions"] as List<string> ?? new List<string>();
+    string currentTeamFilter = Model.CurrentTeamFilter ?? "";
+    string currentPositionFilter = Model.CurrentPositionFilter ?? "";
+    string currentSortOrder = Model.CurrentSortOrder ?? "asc";
+    var availablePositions = Model.AvailablePositions ?? new List<string>();
 }
 
 <h2 class="mb-3">Zawodnicy</h2>
@@ -14,7 +16,6 @@
     <a asp-action="Create" class="btn btn-success">Dodaj nowego zawodnika</a>
 </p>
 
-<!-- Formularz filtrowania -->
 <form asp-action="Index" method="get" class="mb-3">
     <div class="row g-2">
         <div class="col-md-4">
@@ -66,21 +67,73 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Players)
         {
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
                     <td>@Html.DisplayFor(modelItem => item.LastName)</td>
-                    <td>@(item.Team?.Name ?? "Brak zespołu")</td>
+                    <td>@(item.TeamName ?? "Brak zespołu")</td>
                     <td>@Html.DisplayFor(modelItem => item.Position)</td>
                     <td>@Html.DisplayFor(modelItem => item.JerseyNumber)</td>
                     <td>@Html.DisplayFor(modelItem => item.BirthDate)</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Szczegóły</a>
-                           <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Usuń</a>
                     </td>
                 </tr>
         }
     </tbody>
 </table>
+
+<div class="d-flex justify-content-center mt-3">
+    <nav>
+        <ul class="pagination">
+            <li class="page-item @(Model.Players.PageIndex == 1 ? "disabled" : "")">
+                <a class="page-link" asp-action="Index"
+                   asp-route-pageIndex="1"
+                   asp-route-teamName="@currentTeamFilter"
+                   asp-route-position="@currentPositionFilter"
+                   asp-route-sortOrder="@currentSortOrder">
+                    Pierwsza
+                </a>
+            </li>
+            <li class="page-item @(!Model.Players.HasPreviousPage ? "disabled" : "")">
+                <a class="page-link" asp-action="Index"
+                   asp-route-pageIndex="@(Model.Players.PageIndex - 1)"
+                   asp-route-teamName="@currentTeamFilter"
+                   asp-route-position="@currentPositionFilter"
+                   asp-route-sortOrder="@currentSortOrder">
+                    Poprzednia
+                </a>
+            </li>
+            <li class="page-item active">
+                <span class="page-link">
+                    @Model.Players.PageIndex
+                </span>
+            </li>
+            <li class="page-item @(!Model.Players.HasNextPage ? "disabled" : "")">
+                <a class="page-link" asp-action="Index"
+                   asp-route-pageIndex="@(Model.Players.PageIndex + 1)"
+                   asp-route-teamName="@currentTeamFilter"
+                   asp-route-position="@currentPositionFilter"
+                   asp-route-sortOrder="@currentSortOrder">
+                    Następna
+                </a>
+            </li>
+            <li class="page-item @(Model.Players.PageIndex == Model.Players.TotalPages ? "disabled" : "")">
+                <a class="page-link" asp-action="Index"
+                   asp-route-pageIndex="@Model.Players.TotalPages"
+                   asp-route-teamName="@currentTeamFilter"
+                   asp-route-position="@currentPositionFilter"
+                   asp-route-sortOrder="@currentSortOrder">
+                    Ostatnia
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="text-center mt-2">
+    <span>Strona @Model.Players.PageIndex z @Model.Players.TotalPages</span>
+</div>

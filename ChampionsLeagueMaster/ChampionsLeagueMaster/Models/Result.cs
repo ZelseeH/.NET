@@ -20,7 +20,7 @@ namespace ChampionsLeagueMaster.Models
        
         public string? Round { get; set; } 
 
-        public Team? HomeTeam { get; set; } // Changed to singular Team
-        public Team? AwayTeam { get; set; } // Changed to singular Team
+        public Team? HomeTeam { get; set; } 
+        public Team? AwayTeam { get; set; } 
     }
 }

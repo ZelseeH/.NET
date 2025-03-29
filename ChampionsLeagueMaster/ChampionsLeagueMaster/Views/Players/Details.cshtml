@@ -1,4 +1,4 @@
-﻿@model ChampionsLeagueMaster.Models.Player
+﻿@model ChampionsLeagueMaster.ViewModels.Players.PlayerViewModel
 
 @{
     ViewData["Title"] = "Szczegóły zawodnika";
@@ -17,7 +17,7 @@
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
 
                 <dt class="col-sm-3 fw-bold">Zespół</dt>
-                <dd class="col-sm-9">@(Model.Team?.Name ?? "Brak zespołu")</dd>
+                <dd class="col-sm-9">@(Model.TeamName ?? "Brak zespołu")</dd>
 
                 <dt class="col-sm-3 fw-bold">Pozycja</dt>
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.Position)</dd>
