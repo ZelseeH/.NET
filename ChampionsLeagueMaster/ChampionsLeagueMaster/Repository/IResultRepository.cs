@@ -10,5 +10,6 @@ namespace ChampionsLeagueMaster.Repository
         Task UpdateAsync(Result result);
         Task DeleteAsync(int id);
         Task SaveAsync();
+        event Func<string, Task> ResultChanged;
     }
 }

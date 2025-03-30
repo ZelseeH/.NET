@@ -1,4 +1,4 @@
-﻿@model ChampionsLeagueMaster.Models.Result
+﻿@model ChampionsLeagueMaster.ViewModels.Results.ResultCreateEditViewModel
 
 @{
     ViewData["Title"] = "Dodaj wynik";
@@ -9,46 +9,78 @@
     <div class="card shadow-sm mt-3">
         <div class="card-body">
             <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
                 <div class="mb-3">
-                    <label asp-for="Season" class="form-label fw-bold">Sezon</label>
+                    <label asp-for="Season" class="form-label fw-bold"></label>
                     <input asp-for="Season" class="form-control" required />
+                    <span asp-validation-for="Season" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="Round" class="form-label fw-bold">Kolejka</label>
-                    <input asp-for="Round" class="form-control" required />
+                    <label asp-for="Round" class="form-label fw-bold"></label>
+                    <select asp-for="Round" class="form-select">
+                        <option value="">Wybierz rundę</option>
+                        @foreach (var round in Model.AvailableRounds)
+                        {
+                                <option value="@round">@round</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Round" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="HomeTeamId" class="form-label fw-bold">Gospodarz</label>
-                    <select asp-for="HomeTeamId" asp-items="@(ViewBag.Teams as IEnumerable<SelectListItem> ?? Enumerable.Empty<SelectListItem>())" class="form-select" required>
+                    <label asp-for="HomeTeamId" class="form-label fw-bold"></label>
+                    <select asp-for="HomeTeamId" asp-items="Model.Teams" class="form-select" required>
                         <option value="">Wybierz drużynę</option>
                     </select>
+                    <span asp-validation-for="HomeTeamId" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="AwayTeamId" class="form-label fw-bold">Goście</label>
-                    <select asp-for="AwayTeamId" asp-items="@(ViewBag.Teams as IEnumerable<SelectListItem> ?? Enumerable.Empty<SelectListItem>())" class="form-select" required>
+                    <label asp-for="AwayTeamId" class="form-label fw-bold"></label>
+                    <select asp-for="AwayTeamId" asp-items="Model.Teams" class="form-select" required>
                         <option value="">Wybierz drużynę</option>
                     </select>
+                    <span asp-validation-for="AwayTeamId" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="HomeTeamGoals" class="form-label fw-bold">Wynik Gospodarzy</label>
+                    <label asp-for="HomeTeamGoals" class="form-label fw-bold"></label>
                     <input asp-for="HomeTeamGoals" type="number" class="form-control" min="0" required />
+                    <span asp-validation-for="HomeTeamGoals" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="AwayTeamGoals" class="form-label fw-bold">Wynik Gości</label>
+                    <label asp-for="AwayTeamGoals" class="form-label fw-bold"></label>
                     <input asp-for="AwayTeamGoals" type="number" class="form-control" min="0" required />
+                    <span asp-validation-for="AwayTeamGoals" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="MatchDay" class="form-label fw-bold">Data meczu</label>
+                    <label asp-for="MatchDay" class="form-label fw-bold"></label>
                     <input asp-for="MatchDay" type="date" class="form-control" required />
+                    <span asp-validation-for="MatchDay" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="MatchTime" class="form-label fw-bold">Godzina meczu</label>
+                    <label asp-for="MatchTime" class="form-label fw-bold"></label>
                     <input asp-for="MatchTime" type="time" class="form-control" required />
+                    <span asp-validation-for="MatchTime" class="text-danger"></span>
                 </div>
+
                 <div class="mb-3">
-                    <label asp-for="Status" class="form-label fw-bold">Status</label>
-                    <input asp-for="Status" class="form-control" />
+                    <label asp-for="Status" class="form-label fw-bold"></label>
+                    <select asp-for="Status" class="form-select">
+                        <option value="">Wybierz status</option>
+                        @foreach (var status in Model.AvailableStatuses)
+                        {
+                                <option value="@status">@status</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
                 </div>
+
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary">Zapisz</button>
                     <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
@@ -57,3 +89,9 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

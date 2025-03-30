@@ -1,4 +1,4 @@
-﻿@model ChampionsLeagueMaster.Models.Result
+﻿@model ChampionsLeagueMaster.ViewModels.Results.ResultViewModel
 
 @{
     ViewData["Title"] = "Usuń wynik";
@@ -17,13 +17,19 @@
                 <dd class="col-sm-8">@Model.Round</dd>
 
                 <dt class="col-sm-4 fw-bold">Gospodarze:</dt>
-                <dd class="col-sm-8">@Model.HomeTeam.Name</dd>
+                <dd class="col-sm-8">@Model.HomeTeamName</dd>
 
                 <dt class="col-sm-4 fw-bold">Goście:</dt>
-                <dd class="col-sm-8">@Model.AwayTeam.Name</dd>
+                <dd class="col-sm-8">@Model.AwayTeamName</dd>
 
                 <dt class="col-sm-4 fw-bold">Wynik:</dt>
-                <dd class="col-sm-8">@Model.HomeTeamGoals : @Model.AwayTeamGoals</dd>
+                <dd class="col-sm-8">@Model.Score</dd>
+
+                <dt class="col-sm-4 fw-bold">Data i godzina:</dt>
+                <dd class="col-sm-8">@Model.MatchDateTime</dd>
+
+                <dt class="col-sm-4 fw-bold">Status:</dt>
+                <dd class="col-sm-8">@Model.Status</dd>
             </dl>
         </div>
     </div>

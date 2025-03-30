@@ -1,7 +1,7 @@
-﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Services;
+﻿using ChampionsLeagueMaster.Services;
+using ChampionsLeagueMaster.ViewModels.Results;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
 {
@@ -17,97 +17,127 @@ namespace ChampionsLeagueMaster.Controllers
         public async Task<IActionResult> Index(string season, string round)
         {
             var seasons = await _resultService.GetSeasonsAsync();
-            var rounds = await _resultService.GetRoundsAsync();
 
-            ViewBag.Seasons = seasons;
-            ViewBag.Rounds = rounds;
-            ViewBag.SelectedSeason = season ?? seasons.FirstOrDefault();
-            ViewBag.SelectedRound = round ?? rounds.FirstOrDefault();
+            // Ustaw domyślny sezon, jeśli nie został podany
+            var selectedSeason = season ?? seasons.FirstOrDefault();
 
-            var results = await _resultService.GetAllResultsAsync(season, round);
-            return View(await results.ToListAsync());
+            // Pobierz tylko kolejki dla wybranego sezonu
+            var rounds = await _resultService.GetRoundsBySeasonAsync(selectedSeason);
+
+            // Ustaw domyślną kolejkę, jeśli nie została podana lub jeśli wybrana kolejka nie istnieje w nowym sezonie
+            var selectedRound = round;
+            if (string.IsNullOrEmpty(selectedRound) || !rounds.Contains(selectedRound))
+            {
+                selectedRound = rounds.FirstOrDefault();
+            }
+
+            var results = await _resultService.GetFilteredResultsAsync(selectedSeason, selectedRound);
+
+            var viewModel = new ResultListViewModel
+            {
+                Results = results,
+                Seasons = seasons,
+                Rounds = rounds,
+                SelectedSeason = selectedSeason,
+                SelectedRound = selectedRound
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpGet]
+        public async Task<JsonResult> GetRoundsBySeason(string season)
+        {
+            var rounds = await _resultService.GetRoundsBySeasonAsync(season);
+            return Json(rounds);
         }
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
-            return View();
+            var viewModel = new ResultCreateEditViewModel
+            {
+                Teams = await _resultService.GetTeamsSelectListAsync()
+            };
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("HomeTeamId,AwayTeamId,Season,HomeTeamGoals,AwayTeamGoals,MatchDay,MatchTime,Status,Round")] Result result)
+        public async Task<IActionResult> Create(ResultCreateEditViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                await _resultService.CreateResultAsync(result);
-                return RedirectToAction(nameof(Index));
+                await _resultService.CreateResultAsync(viewModel);
+                return RedirectToAction(nameof(Index), new { season = viewModel.Season });
             }
-            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
-            return View(result);
+
+            viewModel.Teams = await _resultService.GetTeamsSelectListAsync();
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
 
-            var result = await _resultService.GetResultByIdAsync(id.Value);
-            if (result == null) return NotFound();
+            var viewModel = await _resultService.GetResultForEditAsync(id.Value);
+            if (viewModel == null) return NotFound();
 
-            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
-            return View(result);
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,HomeTeamId,AwayTeamId,Season,HomeTeamGoals,AwayTeamGoals,MatchDay,MatchTime,Status,Round")] Result result)
+        public async Task<IActionResult> Edit(int id, ResultCreateEditViewModel viewModel)
         {
-            if (id != result.Id) return NotFound();
+            if (id != viewModel.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    await _resultService.UpdateResultAsync(result);
+                    await _resultService.UpdateResultAsync(viewModel);
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (KeyNotFoundException)
                 {
-                    if (await _resultService.GetResultByIdAsync(id) == null) return NotFound();
-                    else throw;
+                    return NotFound();
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new { season = viewModel.Season });
             }
 
-            ViewBag.Teams = await _resultService.GetTeamsSelectListAsync();
-            return View(result);
+            viewModel.Teams = await _resultService.GetTeamsSelectListAsync();
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
 
-            var result = await _resultService.GetResultByIdAsync(id.Value);
-            if (result == null) return NotFound();
+            var viewModel = await _resultService.GetResultViewModelByIdAsync(id.Value);
+            if (viewModel == null) return NotFound();
 
-            return View(result);
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
 
-            var result = await _resultService.GetResultByIdAsync(id.Value);
-            if (result == null) return NotFound();
+            var viewModel = await _resultService.GetResultViewModelByIdAsync(id.Value);
+            if (viewModel == null) return NotFound();
 
-            return View(result);
+            return View(viewModel);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var result = await _resultService.GetResultByIdAsync(id);
+            string season = result?.Season;
+
             await _resultService.DeleteResultAsync(id);
-            return RedirectToAction(nameof(Index));
+
+            return RedirectToAction(nameof(Index), new { season });
         }
     }
 }

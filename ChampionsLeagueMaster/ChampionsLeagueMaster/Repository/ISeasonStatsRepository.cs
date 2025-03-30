@@ -9,6 +9,7 @@ namespace ChampionsLeagueMaster.Repository
         Task InsertAsync(SeasonStats seasonStats);
         Task UpdateAsync(SeasonStats seasonStats);
         Task DeleteAsync(int id);
+        Task DeleteBySeasonAsync(string season);
         Task SaveAsync();
     }
 }

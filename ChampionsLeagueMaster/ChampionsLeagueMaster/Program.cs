@@ -5,8 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Zmiana z AddDbContext na AddDbContextPool z ServiceLifetime.Transient
 builder.Services.AddDbContext<ChampionsLeagueMasterContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ChampionsLeagueMasterContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ChampionsLeagueMasterContext")),
+    ServiceLifetime.Transient);
 
 //repository
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();

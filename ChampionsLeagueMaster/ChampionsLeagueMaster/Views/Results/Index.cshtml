@@ -1,18 +1,13 @@
-﻿@model IEnumerable<ChampionsLeagueMaster.Models.Result>
+﻿@model ChampionsLeagueMaster.ViewModels.Results.ResultListViewModel
 
 @{
-    ViewData["Title"] = "Results";
-    var seasons = ViewBag.Seasons as List<string> ?? new List<string>();
-    var rounds = ViewBag.Rounds as List<string> ?? new List<string>();
-    var selectedSeason = ViewBag.SelectedSeason as string ?? seasons.FirstOrDefault();
-    var selectedRound = ViewBag.SelectedRound as string ?? rounds.FirstOrDefault();
+    ViewData["Title"] = "Wyniki Meczów";
 }
 
 <div class="container-fluid py-4 bg-light">
     <div class="container">
         <h1 class="text-center mb-4 display-5 fw-bold text-primary">Wyniki Meczów</h1>
 
-        <!-- Przeniesiony przycisk "Dodaj mecz" -->
         <div class="text-center mb-4">
             <a asp-action="Create" class="btn btn-success">Dodaj mecz</a>
         </div>
@@ -23,10 +18,10 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="form-group">
                             <label for="season" class="form-label fw-bold text-muted mb-1">Wybierz sezon:</label>
-                            <select name="season" id="season" class="form-select form-select-sm">
-                                @foreach (var season in seasons)
+                            <select name="season" id="season" class="form-select form-select-sm" onchange="updateRounds()">
+                                @foreach (var season in Model.Seasons)
                                 {
-                                        <option value="@season" selected="@(season == selectedSeason)">@season</option>
+                                        <option value="@season" selected="@(season == Model.SelectedSeason)">@season</option>
                                 }
                             </select>
                         </div>
@@ -35,9 +30,9 @@
                         <div class="form-group">
                             <label for="round" class="form-label fw-bold text-muted mb-1">Wybierz kolejkę:</label>
                             <select name="round" id="round" class="form-select form-select-sm">
-                                @foreach (var round in rounds)
+                                @foreach (var round in Model.Rounds)
                                 {
-                                        <option value="@round" selected="@(round == selectedRound)">@round</option>
+                                        <option value="@round" selected="@(round == Model.SelectedRound)">@round</option>
                                 }
                             </select>
                         </div>
@@ -53,20 +48,18 @@
                             <th style="width: 25%">Gospodarze</th>
                             <th style="width: 10%">Wynik</th>
                             <th style="width: 25%">Goście</th>
-                            <th style="width: 10%">Data meczu</th>
-                            <th style="width: 10%">Godzina meczu</th>
+                            <th style="width: 20%">Data i godzina</th>
                             <th style="width: 20%">Akcje</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.Results)
                         {
                                 <tr>
-                                    <td class="fw-bold text-end">@Html.DisplayFor(modelItem => item.HomeTeam.Name)</td>
-                                    <td class="fw-bold bg-light">@Html.DisplayFor(modelItem => item.HomeTeamGoals) : @Html.DisplayFor(modelItem => item.AwayTeamGoals)</td>
-                                    <td class="fw-bold text-start">@Html.DisplayFor(modelItem => item.AwayTeam.Name)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.MatchDay)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.MatchTime)</td>
+                                    <td class="fw-bold text-end">@item.HomeTeamName</td>
+                                    <td class="fw-bold bg-light">@item.Score</td>
+                                    <td class="fw-bold text-start">@item.AwayTeamName</td>
+                                    <td>@item.MatchDateTime</td>
                                     <td>
                                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edytuj</a>
                                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Szczegóły</a>
@@ -80,3 +73,31 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+        <script>
+            function updateRounds() {
+                const seasonSelect = document.getElementById('season');
+                const selectedSeason = seasonSelect.value;
+
+                // Wykonaj zapytanie AJAX do kontrolera
+                fetch(`/Results/GetRoundsBySeason?season=${selectedSeason}`)
+                    .then(response => response.json())
+                    .then(rounds => {
+                        const roundSelect = document.getElementById('round');
+
+                        // Wyczyść obecne opcje
+                        roundSelect.innerHTML = '';
+
+                        // Dodaj nowe opcje na podstawie odpowiedzi
+                        rounds.forEach(round => {
+                            const option = document.createElement('option');
+                            option.value = round;
+                            option.textContent = round;
+                            roundSelect.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Błąd podczas pobierania kolejek:', error));
+            }
+        </script>
+}

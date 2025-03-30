@@ -13,6 +13,8 @@ namespace ChampionsLeagueMaster.Repository
             _context = context;
         }
 
+        public event Func<string, Task> ResultChanged;
+
         public Task<IQueryable<Result>> GetAllAsync()
         {
             return Task.FromResult(_context.Results
@@ -32,12 +34,14 @@ namespace ChampionsLeagueMaster.Repository
         public async Task InsertAsync(Result result)
         {
             await _context.Results.AddAsync(result);
+            await SaveAsync();
+            // Nie wywoływać tutaj OnResultChanged
         }
-
-        public Task UpdateAsync(Result result)
+        public async Task UpdateAsync(Result result)
         {
             _context.Results.Update(result);
-            return Task.CompletedTask;
+            await SaveAsync();
+            await OnResultChanged(result.Season);
         }
 
         public async Task DeleteAsync(int id)
@@ -46,12 +50,22 @@ namespace ChampionsLeagueMaster.Repository
             if (result != null)
             {
                 _context.Results.Remove(result);
+                await SaveAsync();
+                await OnResultChanged(result.Season);
             }
         }
 
         public async Task SaveAsync()
         {
             await _context.SaveChangesAsync();
+        }
+
+        private async Task OnResultChanged(string season)
+        {
+            if (ResultChanged != null)
+            {
+                await ResultChanged.Invoke(season);
+            }
         }
     }
 }

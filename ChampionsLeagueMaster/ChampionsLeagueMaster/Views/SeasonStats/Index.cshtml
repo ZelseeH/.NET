@@ -1,79 +1,82 @@
-﻿@model IEnumerable<ChampionsLeagueMaster.Models.SeasonStats>
+﻿@model ChampionsLeagueMaster.ViewModels.SeasonStats.SeasonStatsListViewModel
 
 @{
-    ViewData["Title"] = "Season Stats";
-    var seasons = ViewBag.Seasons as List<string> ?? new List<string>();
-    var selectedSeason = ViewBag.SelectedSeason as string ?? seasons.FirstOrDefault();
-    int position = 1;
+    ViewData["Title"] = "Tabela Ligowa";
 }
 
 <div class="container-fluid py-4 bg-light">
     <div class="container">
         <h1 class="text-center mb-4 display-5 fw-bold text-primary">Tabela Ligowa</h1>
 
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <div class="row mb-3 justify-content-center">
-                    <div class="col-md-4 col-sm-6">
-                     <form asp-action="Index" method="get" class="d-flex align-items-end">
-    <div class="form-group me-2 flex-grow-1">
-        <label for="season" class="form-label fw-bold text-muted mb-1">Wybierz sezon:</label>
-        <select name="season" id="season" class="form-select form-select-sm">
-                                    @foreach (var season in seasons)
+      <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row mb-3 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <form asp-action="Index" method="get" class="d-flex align-items-end">
+                        <div class="form-group me-2 flex-grow-1">
+                            <label for="season" class="form-label fw-bold text-muted mb-1">Wybierz sezon:</label>
+                                    <select name="season" id="season" class="form-select form-select-sm">
+                                    @foreach (var season in Model.Seasons)
                                     {
-                        <option value="@season" selected="@(season == selectedSeason)">@season</option>
+                                        <option value="@season" selected="@(season == Model.SelectedSeason)">@season</option>
                                     }
-        </select>
-    </div>
-    <div>
-        <button type="submit" class="btn btn-primary btn-sm">Filtruj</button>
-    </div>
-</form>
-
-                    </div>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-sm">Filtruj</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
 
-                <table class="table table-sm table-bordered table-hover text-center align-middle mt-3">
-                    <thead class="table-dark">
-                        <tr>
-                            <th style="width: 10px;"></th>
-                            <th style="width: 5%">#</th>
-                            <th style="width: 20%">Klub</th>
-                            <th>Pkt</th>
-                            <th>W</th>
-                            <th>R</th>
-                            <th>P</th>
-                            <th>RM</th>
-                            <th>BZ</th>
-                            <th>BS</th>
-                            <th>RB</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        @TempData["SuccessMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+            <table class="table table-sm table-bordered table-hover text-center align-middle mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th style="width: 10px;"></th>
+                        <th style="width: 5%">#</th>
+                        <th style="width: 20%">Klub</th>
+                        <th>Pkt</th>
+                        <th>W</th>
+                        <th>R</th>
+                        <th>P</th>
+                        <th>RM</th>
+                        <th>BZ</th>
+                        <th>BS</th>
+                        <th>RB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var item in Model.Stats)
                         {
-                            string bgColor = position <= 8 ? "bg-primary text-white"   // 🟦 Awans do 1/8
-                                           : position <= 24 ? "bg-warning text-dark"   // 🟧 Awans do 1/16
+                            string bgColor = item.Position <= 8 ? "bg-primary text-white"   // 🟦 Awans do 1/8
+                                           : item.Position <= 24 ? "bg-warning text-dark"   // 🟧 Awans do 1/16
                                            : ""; // Reszta odpada
 
-                                    <tr>
-                                        <td class="@bgColor" style="width: 10px;"></td>
-                                        <td class="fw-bold">@position</td>
-                                        <td class="text-start">@Html.DisplayFor(modelItem => item.Team.Name)</td>
-                                        <td class="fw-bold">@Html.DisplayFor(modelItem => item.Points)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.Wins)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.Draws)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.Losses)</td>
-                                        <td>@(item.Wins + item.Draws + item.Losses)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.GoalsScored)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.GoalsConceded)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.GoalDifference)</td>
-                                    </tr>
-                            position++;
+                            <tr>
+                                <td class="@bgColor" style="width: 10px;"></td>
+                                <td class="fw-bold">@item.Position</td>
+                                <td class="text-start">@item.TeamName</td>
+                                <td class="fw-bold">@item.Points</td>
+                                <td>@item.Wins</td>
+                                <td>@item.Draws</td>
+                                <td>@item.Losses</td>
+                                <td>@item.Played</td>
+                                <td>@item.GoalsScored</td>
+                                <td>@item.GoalsConceded</td>
+                                <td>@item.GoalDifference</td>
+                            </tr>
                         }
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
 </div>

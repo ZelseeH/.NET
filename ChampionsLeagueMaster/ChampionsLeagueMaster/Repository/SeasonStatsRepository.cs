@@ -45,6 +45,22 @@ namespace ChampionsLeagueMaster.Repository
             }
         }
 
+        public async Task DeleteBySeasonAsync(string season)
+        {
+            var statsToDelete = await _context.SeasonStats
+                .Where(s => s.Season == season)
+                .ToListAsync();
+
+            if (statsToDelete.Any())
+            {
+                _context.SeasonStats.RemoveRange(statsToDelete);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+
+
+
         public async Task SaveAsync()
         {
             await _context.SaveChangesAsync();
