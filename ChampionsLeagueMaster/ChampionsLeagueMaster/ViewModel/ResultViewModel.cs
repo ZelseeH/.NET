@@ -36,7 +36,6 @@ namespace ChampionsLeagueMaster.ViewModels.Results
         [Display(Name = "Runda")]
         public string? Round { get; set; }
 
-        // Pomocnicze właściwości
         public string Score => $"{HomeTeamGoals ?? 0} - {AwayTeamGoals ?? 0}";
         public string MatchDateTime => MatchDay.HasValue ?
             $"{MatchDay.Value.ToString("dd.MM.yyyy")} {(MatchTime.HasValue ? MatchTime.Value.ToString("HH:mm") : "")}" :

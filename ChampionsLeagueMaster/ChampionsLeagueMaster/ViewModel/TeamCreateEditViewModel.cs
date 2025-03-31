@@ -13,7 +13,7 @@ namespace ChampionsLeagueMaster.ViewModels.Teams
 
         [Required(ErrorMessage = "Kraj jest wymagany")]
         [Display(Name = "Kraj")]
-        [StringLength(50, ErrorMessage = "Nazwa kraju nie może być dłuższa niż 50 znaków")]
+        [StringLength(60, ErrorMessage = "Nazwa kraju nie może być dłuższa niż 50 znaków")]
         public string? Country { get; set; } 
 
         [Required(ErrorMessage = "Rok założenia jest wymagany")]

@@ -17,14 +17,11 @@ namespace ChampionsLeagueMaster.Controllers
         public async Task<IActionResult> Index(string season, string round)
         {
             var seasons = await _resultService.GetSeasonsAsync();
-
-            // Ustaw domyślny sezon, jeśli nie został podany
+                        
             var selectedSeason = season ?? seasons.FirstOrDefault();
-
-            // Pobierz tylko kolejki dla wybranego sezonu
+                       
             var rounds = await _resultService.GetRoundsBySeasonAsync(selectedSeason);
-
-            // Ustaw domyślną kolejkę, jeśli nie została podana lub jeśli wybrana kolejka nie istnieje w nowym sezonie
+                        
             var selectedRound = round;
             if (string.IsNullOrEmpty(selectedRound) || !rounds.Contains(selectedRound))
             {
