@@ -1,6 +1,7 @@
-﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Services;
+﻿using ChampionsLeagueMaster.Services;
 using ChampionsLeagueMaster.ViewModels.Teams;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -9,10 +10,12 @@ namespace ChampionsLeagueMaster.Controllers
     public class TeamsController : Controller
     {
         private readonly ITeamService _teamService;
+        private readonly IValidator<TeamCreateEditViewModel> _validator;
 
-        public TeamsController(ITeamService teamService)
+        public TeamsController(ITeamService teamService, IValidator<TeamCreateEditViewModel> validator)
         {
             _teamService = teamService;
+            _validator = validator;
         }
 
         public async Task<IActionResult> Index(string countryFilter, string sortOrder, int? pageNumber)
@@ -43,11 +46,22 @@ namespace ChampionsLeagueMaster.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(TeamCreateEditViewModel viewModel)
         {
+            ValidationResult validationResult = await _validator.ValidateAsync(viewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+                }
+            }
+
             if (ModelState.IsValid)
             {
                 await _teamService.CreateTeamAsync(viewModel);
                 return RedirectToAction(nameof(Index));
             }
+
             return View(viewModel);
         }
 
@@ -85,6 +99,16 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id != viewModel.Id) return NotFound();
 
+            ValidationResult validationResult = await _validator.ValidateAsync(viewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+                }
+            }
+
             if (ModelState.IsValid)
             {
                 try
@@ -100,6 +124,7 @@ namespace ChampionsLeagueMaster.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             return View(viewModel);
         }
 

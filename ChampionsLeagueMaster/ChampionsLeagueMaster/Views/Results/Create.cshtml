@@ -11,15 +11,17 @@
             <form asp-action="Create" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+                <!-- Sezon -->
                 <div class="mb-3">
                     <label asp-for="Season" class="form-label fw-bold"></label>
-                    <input asp-for="Season" class="form-control" required />
+                    <input asp-for="Season" class="form-control" placeholder="np. 2024 lub 2023/2024" />
                     <span asp-validation-for="Season" class="text-danger"></span>
                 </div>
 
+                <!-- Runda -->
                 <div class="mb-3">
                     <label asp-for="Round" class="form-label fw-bold"></label>
-                    <select asp-for="Round" class="form-select">
+                    <select asp-for="Round" class="form-select" id="roundSelect">
                         <option value="">Wybierz rundę</option>
                         @foreach (var round in Model.AvailableRounds)
                         {
@@ -29,49 +31,59 @@
                     <span asp-validation-for="Round" class="text-danger"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="HomeTeamId" class="form-label fw-bold"></label>
-                    <select asp-for="HomeTeamId" asp-items="Model.Teams" class="form-select" required>
-                        <option value="">Wybierz drużynę</option>
-                    </select>
-                    <span asp-validation-for="HomeTeamId" class="text-danger"></span>
+                <!-- Drużyny -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="HomeTeamId" class="form-label fw-bold"></label>
+                        <select asp-for="HomeTeamId" asp-items="Model.Teams" class="form-select">
+                            <option value="">Wybierz gospodarza</option>
+                        </select>
+                        <span asp-validation-for="HomeTeamId" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="AwayTeamId" class="form-label fw-bold"></label>
+                        <select asp-for="AwayTeamId" asp-items="Model.Teams" class="form-select">
+                            <option value="">Wybierz gościa</option>
+                        </select>
+                        <span asp-validation-for="AwayTeamId" class="text-danger"></span>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="AwayTeamId" class="form-label fw-bold"></label>
-                    <select asp-for="AwayTeamId" asp-items="Model.Teams" class="form-select" required>
-                        <option value="">Wybierz drużynę</option>
-                    </select>
-                    <span asp-validation-for="AwayTeamId" class="text-danger"></span>
+                <!-- Wyniki -->
+                <div class="row" id="goalsSection">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="HomeTeamGoals" class="form-label fw-bold"></label>
+                        <input asp-for="HomeTeamGoals" type="number" class="form-control" min="0" max="50" />
+                        <span asp-validation-for="HomeTeamGoals" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="AwayTeamGoals" class="form-label fw-bold"></label>
+                        <input asp-for="AwayTeamGoals" type="number" class="form-control" min="0" max="50" />
+                        <span asp-validation-for="AwayTeamGoals" class="text-danger"></span>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="HomeTeamGoals" class="form-label fw-bold"></label>
-                    <input asp-for="HomeTeamGoals" type="number" class="form-control" min="0" required />
-                    <span asp-validation-for="HomeTeamGoals" class="text-danger"></span>
+                <!-- Data i godzina -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MatchDay" class="form-label fw-bold"></label>
+                        <input asp-for="MatchDay" type="date" class="form-control" />
+                        <span asp-validation-for="MatchDay" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="MatchTime" class="form-label fw-bold"></label>
+                        <input asp-for="MatchTime" type="time" class="form-control" />
+                        <span asp-validation-for="MatchTime" class="text-danger"></span>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="AwayTeamGoals" class="form-label fw-bold"></label>
-                    <input asp-for="AwayTeamGoals" type="number" class="form-control" min="0" required />
-                    <span asp-validation-for="AwayTeamGoals" class="text-danger"></span>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="MatchDay" class="form-label fw-bold"></label>
-                    <input asp-for="MatchDay" type="date" class="form-control" required />
-                    <span asp-validation-for="MatchDay" class="text-danger"></span>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="MatchTime" class="form-label fw-bold"></label>
-                    <input asp-for="MatchTime" type="time" class="form-control" required />
-                    <span asp-validation-for="MatchTime" class="text-danger"></span>
-                </div>
-
+                <!-- Status -->
                 <div class="mb-3">
                     <label asp-for="Status" class="form-label fw-bold"></label>
-                    <select asp-for="Status" class="form-select">
+                    <select asp-for="Status" class="form-select" id="statusSelect">
                         <option value="">Wybierz status</option>
                         @foreach (var status in Model.AvailableStatuses)
                         {
@@ -94,4 +106,32 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+        <script>
+            $(document).ready(function () {
+                function updateFormFields() {
+                    const status = $('#statusSelect').val();
+                    const $goalsSection = $('#goalsSection');
+                    const $matchDay = $('input[name="MatchDay"]');
+
+                    // Zarządzanie wynikami
+                    if (status === 'Zaplanowany' || status === 'Odwołany') {
+                        $goalsSection.find('input').val('').prop('disabled', true);
+                    } else {
+                        $goalsSection.find('input').prop('disabled', false);
+                    }
+
+                    // Walidacja daty
+                    if (status === 'Zaplanowany') {
+                        $matchDay.attr('min', new Date().toISOString().split('T')[0]);
+                    } else if (status === 'Zakończony' || status === 'W trakcie') {
+                        $matchDay.attr('max', new Date().toISOString().split('T')[0]);
+                    } else {
+                        $matchDay.removeAttr('min max');
+                    }
+                }
+
+                $('#statusSelect').change(updateFormFields);
+                updateFormFields();
+            });
+        </script>
 }

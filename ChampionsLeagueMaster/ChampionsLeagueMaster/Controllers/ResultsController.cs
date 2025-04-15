@@ -1,6 +1,9 @@
 ﻿using ChampionsLeagueMaster.Services;
 using ChampionsLeagueMaster.ViewModels.Results;
 using Microsoft.AspNetCore.Mvc;
+using FluentValidation;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
@@ -8,25 +11,23 @@ namespace ChampionsLeagueMaster.Controllers
     public class ResultsController : Controller
     {
         private readonly IResultService _resultService;
+        private readonly IValidator<ResultCreateEditViewModel> _validator;
 
-        public ResultsController(IResultService resultService)
+        public ResultsController(IResultService resultService, IValidator<ResultCreateEditViewModel> validator)
         {
             _resultService = resultService;
+            _validator = validator;
         }
 
         public async Task<IActionResult> Index(string season, string round)
         {
             var seasons = await _resultService.GetSeasonsAsync();
-                        
             var selectedSeason = season ?? seasons.FirstOrDefault();
-                       
+
             var rounds = await _resultService.GetRoundsBySeasonAsync(selectedSeason);
-                        
-            var selectedRound = round;
-            if (string.IsNullOrEmpty(selectedRound) || !rounds.Contains(selectedRound))
-            {
-                selectedRound = rounds.FirstOrDefault();
-            }
+            var selectedRound = string.IsNullOrEmpty(round) || !rounds.Contains(round)
+                ? rounds.FirstOrDefault()
+                : round;
 
             var results = await _resultService.GetFilteredResultsAsync(selectedSeason, selectedRound);
 
@@ -62,6 +63,14 @@ namespace ChampionsLeagueMaster.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ResultCreateEditViewModel viewModel)
         {
+            var validationResult = await _validator.ValidateAsync(viewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            }
+
             if (ModelState.IsValid)
             {
                 await _resultService.CreateResultAsync(viewModel);
@@ -88,6 +97,14 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id != viewModel.Id) return NotFound();
 
+            var validationResult = await _validator.ValidateAsync(viewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            }
+
             if (ModelState.IsValid)
             {
                 try
@@ -98,6 +115,7 @@ namespace ChampionsLeagueMaster.Controllers
                 {
                     return NotFound();
                 }
+
                 return RedirectToAction(nameof(Index), new { season = viewModel.Season });
             }
 
@@ -133,7 +151,6 @@ namespace ChampionsLeagueMaster.Controllers
             string season = result?.Season;
 
             await _resultService.DeleteResultAsync(id);
-
             return RedirectToAction(nameof(Index), new { season });
         }
     }

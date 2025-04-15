@@ -289,3 +289,7 @@ C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\ob
 C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\obj\Debug\net8.0\ChampionsLeagueMaster.pdb
 C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\obj\Debug\net8.0\ChampionsLeagueMaster.genruntimeconfig.cache
 C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\obj\Debug\net8.0\ref\ChampionsLeagueMaster.dll
+C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Kuba\Desktop\DOTNET\.NET\ChampionsLeagueMaster\ChampionsLeagueMaster\obj\Debug\net8.0\ChampionsLeagueMaster.MvcApplicationPartsAssemblyInfo.cs

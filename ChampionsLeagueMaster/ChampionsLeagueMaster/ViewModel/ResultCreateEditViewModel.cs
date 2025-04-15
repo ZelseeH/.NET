@@ -22,12 +22,10 @@ namespace ChampionsLeagueMaster.ViewModels.Results
         public string? Season { get; set; }
 
         [Display(Name = "Bramki gospodarza")]
-        [Range(0, 50, ErrorMessage = "Liczba bramek musi być między 0 a 50")]
-        public int? HomeTeamGoals { get; set; } = 0;
+        public int? HomeTeamGoals { get; set; } // Usunięto domyślną wartość i atrybut [Range]
 
         [Display(Name = "Bramki gościa")]
-        [Range(0, 50, ErrorMessage = "Liczba bramek musi być między 0 a 50")]
-        public int? AwayTeamGoals { get; set; } = 0;
+        public int? AwayTeamGoals { get; set; } // Usunięto domyślną wartość i atrybut [Range]
 
         [Display(Name = "Data meczu")]
         [DataType(DataType.Date)]
@@ -39,14 +37,12 @@ namespace ChampionsLeagueMaster.ViewModels.Results
 
         [Display(Name = "Status")]
         public string? Status { get; set; }
-
+        [Required(ErrorMessage = "Podaj Runde")]
         [Display(Name = "Runda")]
         public string? Round { get; set; }
 
-        
         public SelectList? Teams { get; set; }
 
-       
         public List<string> AvailableStatuses { get; set; } = new List<string>
         {
             "Zaplanowany",
@@ -57,7 +53,6 @@ namespace ChampionsLeagueMaster.ViewModels.Results
 
         public List<string> AvailableRounds { get; set; } = new List<string>
         {
-
             "1. Kolejka",
             "2. Kolejka",
             "3. Kolejka",

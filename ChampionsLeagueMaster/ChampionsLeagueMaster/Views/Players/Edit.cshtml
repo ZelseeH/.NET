@@ -15,38 +15,40 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label asp-for="FirstName" class="form-label fw-bold">Imię</label>
+                        <label asp-for="FirstName" class="form-label fw-bold"></label>
                         <input asp-for="FirstName" class="form-control" />
                         <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="LastName" class="form-label fw-bold">Nazwisko</label>
+                        <label asp-for="LastName" class="form-label fw-bold"></label>
                         <input asp-for="LastName" class="form-control" />
                         <span asp-validation-for="LastName" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="TeamId" class="form-label fw-bold">Zespół</label>
-                        <select asp-for="TeamId" class="form-control" asp-items="Model.Teams"></select>
+                        <label asp-for="TeamId" class="form-label fw-bold"></label>
+                        <select asp-for="TeamId" class="form-control" asp-items="Model.Teams">
+                            <option value="">-- Wybierz drużynę --</option>
+                        </select>
                         <span asp-validation-for="TeamId" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="Position" class="form-label fw-bold">Pozycja</label>
+                        <label asp-for="Position" class="form-label fw-bold"></label>
                         <input asp-for="Position" class="form-control" />
                         <span asp-validation-for="Position" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="JerseyNumber" class="form-label fw-bold">Numer na koszulce</label>
-                        <input asp-for="JerseyNumber" class="form-control" />
+                        <label asp-for="JerseyNumber" class="form-label fw-bold"></label>
+                        <input asp-for="JerseyNumber" class="form-control" type="number" min="1" max="99"/>
                         <span asp-validation-for="JerseyNumber" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="BirthDate" class="form-label fw-bold">Data urodzenia</label>
-                        <input asp-for="BirthDate" class="form-control" type="date" />
+                        <label asp-for="BirthDate" class="form-label fw-bold"></label>
+                        <input asp-for="BirthDate" class="form-control" type="date"/>
                         <span asp-validation-for="BirthDate" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="Country" class="form-label fw-bold">Kraj</label>
-                        <input asp-for="Country" class="form-control" />
+                        <label asp-for="Country" class="form-label fw-bold"></label>
+                        <input asp-for="Country" class="form-control"/>
                         <span asp-validation-for="Country" class="text-danger"></span>
                     </div>
                 </div>

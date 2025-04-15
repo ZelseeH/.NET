@@ -10,8 +10,8 @@ namespace ChampionsLeagueMaster.Models
         public int? AwayTeamId { get; set; }
         public string? Season { get; set; }
 
-        public int? HomeTeamGoals { get; set; } = 0;
-        public int? AwayTeamGoals { get; set; } = 0;
+        public int? HomeTeamGoals { get; set; }
+        public int? AwayTeamGoals { get; set; }
 
         public DateOnly? MatchDay { get; set; } 
         public TimeOnly? MatchTime { get; set; } 

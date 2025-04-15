@@ -16,58 +16,69 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label asp-for="HomeTeamId" class="form-label fw-bold"></label>
-                        <select asp-for="HomeTeamId" class="form-control" asp-items="Model.Teams"></select>
+                        <select asp-for="HomeTeamId" class="form-control" asp-items="Model.Teams" required></select>
                         <span asp-validation-for="HomeTeamId" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="AwayTeamId" class="form-label fw-bold"></label>
-                        <select asp-for="AwayTeamId" class="form-control" asp-items="Model.Teams"></select>
+                        <select asp-for="AwayTeamId" class="form-control" asp-items="Model.Teams" required></select>
                         <span asp-validation-for="AwayTeamId" class="text-danger"></span>
                     </div>
-                    <div class="col-md-6 mb-3">
+
+                    <div class="col-md-6 mb-3 goals-section">
                         <label asp-for="HomeTeamGoals" class="form-label fw-bold"></label>
-                        <input asp-for="HomeTeamGoals" class="form-control" type="number" min="0" />
+                        <input asp-for="HomeTeamGoals" class="form-control" type="number" min="0" max="50" />
                         <span asp-validation-for="HomeTeamGoals" class="text-danger"></span>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3 goals-section">
                         <label asp-for="AwayTeamGoals" class="form-label fw-bold"></label>
-                        <input asp-for="AwayTeamGoals" class="form-control" type="number" min="0" />
+                        <input asp-for="AwayTeamGoals" class="form-control" type="number" min="0" max="50" />
                         <span asp-validation-for="AwayTeamGoals" class="text-danger"></span>
                     </div>
+
                     <div class="col-md-6 mb-3">
                         <label asp-for="MatchDay" class="form-label fw-bold"></label>
-                        <input asp-for="MatchDay" class="form-control" type="date" />
+                        <input asp-for="MatchDay" class="form-control" type="date" required />
                         <span asp-validation-for="MatchDay" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="MatchTime" class="form-label fw-bold"></label>
-                        <input asp-for="MatchTime" class="form-control" type="time" />
+                        <input asp-for="MatchTime" class="form-control" type="time" required />
                         <span asp-validation-for="MatchTime" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="Season" class="form-label fw-bold"></label>
-                        <input asp-for="Season" class="form-control" />
+                        <input asp-for="Season" class="form-control" pattern="^\d{4}$|^\d{4}/\d{4}$" required />
                         <span asp-validation-for="Season" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="Status" class="form-label fw-bold"></label>
-                        <select asp-for="Status" class="form-select">
+                        <select asp-for="Status" class="form-select" required>
                             <option value="">Wybierz status</option>
-                            @foreach (var status in Model.AvailableStatuses)
-                            {
-                                    <option value="@status">@status</option>
-                            }
+                            <option value="Zaplanowany">Zaplanowany</option>
+                            <option value="W trakcie">W trakcie</option>
+                            <option value="Zakończony">Zakończony</option>
+                            <option value="Odwołany">Odwołany</option>
                         </select>
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label asp-for="Round" class="form-label fw-bold"></label>
-                        <select asp-for="Round" class="form-select">
+                        <select asp-for="Round" class="form-select" required>
                             <option value="">Wybierz rundę</option>
-                            @foreach (var round in Model.AvailableRounds)
-                            {
-                                    <option value="@round">@round</option>
-                            }
+                            <option value="1. Kolejka">1. Kolejka</option>
+                            <option value="2. Kolejka">2. Kolejka</option>
+                            <option value="3. Kolejka">3. Kolejka</option>
+                            <option value="4. Kolejka">4. Kolejka</option>
+                            <option value="5. Kolejka">5. Kolejka</option>
+                            <option value="6. Kolejka">6. Kolejka</option>
+                            <option value="7. Kolejka">7. Kolejka</option>
+                            <option value="8. Kolejka">8. Kolejka</option>
+                            <option value="1/16 finału">1/16 finału</option>
+                            <option value="1/8 finału">1/8 finału</option>
+                            <option value="Ćwierćfinał">Ćwierćfinał</option>
+                            <option value="Półfinał">Półfinał</option>
+                            <option value="Finał">Finał</option>
                         </select>
                         <span asp-validation-for="Round" class="text-danger"></span>
                     </div>
@@ -86,4 +97,28 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+        <script>
+            $(document).ready(function() {
+                const $status = $('#Status');
+                const $goalsSection = $('.goals-section');
+                const $homeGoals = $('#HomeTeamGoals');
+                const $awayGoals = $('#AwayTeamGoals');
+
+                function updateGoalsVisibility() {
+                    const status = $status.val();
+                    if (status === 'Zaplanowany' || status === 'Odwołany') {
+                        $goalsSection.hide();
+                        $homeGoals.val('').prop('required', false);
+                        $awayGoals.val('').prop('required', false);
+                    } else if (status === 'W trakcie' || status === 'Zakończony') {
+                        $goalsSection.show();
+                        $homeGoals.prop('required', true);
+                        $awayGoals.prop('required', true);
+                    }
+                }
+
+                $status.on('change', updateGoalsVisibility);
+                updateGoalsVisibility(); // Initial call
+            });
+        </script>
 }

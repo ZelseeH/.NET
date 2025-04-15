@@ -1,18 +1,23 @@
-﻿using ChampionsLeagueMaster.Models;
-using ChampionsLeagueMaster.Services;
+﻿using ChampionsLeagueMaster.Services;
 using ChampionsLeagueMaster.ViewModels.Players;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ChampionsLeagueMaster.Controllers
 {
     public class PlayersController : Controller
     {
         private readonly IPlayerService _playerService;
+        private readonly IValidator<PlayerCreateEditViewModel> _validator;
 
-        public PlayersController(IPlayerService playerService)
+        public PlayersController(IPlayerService playerService, IValidator<PlayerCreateEditViewModel> validator)
         {
             _playerService = playerService;
+            _validator = validator;
         }
+
         public async Task<IActionResult> Index(string teamName, string position, string sortOrder, int pageIndex = 1, int pageSize = 10)
         {
             var paginatedPlayers = await _playerService.GetPaginatedPlayerViewModelsAsync(teamName, position, sortOrder, pageIndex, pageSize);
@@ -29,8 +34,6 @@ namespace ChampionsLeagueMaster.Controllers
             return View(viewModel);
         }
 
-
-
         public async Task<IActionResult> Create()
         {
             var viewModel = new PlayerCreateEditViewModel
@@ -44,6 +47,14 @@ namespace ChampionsLeagueMaster.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PlayerCreateEditViewModel playerViewModel)
         {
+            ValidationResult validationResult = await _validator.ValidateAsync(playerViewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            }
+
             if (ModelState.IsValid)
             {
                 await _playerService.CreatePlayerAsync(playerViewModel);
@@ -72,6 +83,14 @@ namespace ChampionsLeagueMaster.Controllers
         {
             if (id != playerViewModel.Id)
                 return NotFound();
+
+            ValidationResult validationResult = await _validator.ValidateAsync(playerViewModel);
+
+            if (!validationResult.IsValid)
+            {
+                foreach (var error in validationResult.Errors)
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+            }
 
             if (ModelState.IsValid)
             {
